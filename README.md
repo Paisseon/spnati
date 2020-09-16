@@ -31,4 +31,10 @@ alias spnati="cd /var/mobile/SPNatI; python3 offline_host.py"
 
 alias localhost="debugserver localhost:8080"
 
+• In NewTerm type 'spnati'
+
+• Open a new tab in NewTerm and type 'localhost'
+
+• Open Safari and go to localhost:8080
+
 ![Kanna calling you hentai](https://i.ytimg.com/vi/Tcf7GO9nphw/maxresdefault.jpg)
