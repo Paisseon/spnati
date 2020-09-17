@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <debug>false</debug> <!-- true or false -->
+    <collectibles>true</collectibles>
+
+    <!-- Default / startup table fill mode. -->
+    <default-fill>new</default-fill>
+
+    <!-- Options for alt costume availability. -->
+    <alternate-costumes>true</alternate-costumes>
+    <alternate-costume-sets>all</alternate-costume-sets>
+    
+    <!-- Options related to events. -->
+    <!-- <default-costume-set>valentines</default-costume-set> -->
+    <!-- <default-costume-set>april_fools</default-costume-set> -->
+    <!-- <default-costume-set>easter</default-costume-set> -->
+    <!-- <default-costume-set>summer</default-costume-set> -->
+
+    <default-background>inventory</default-background>
+   
+    <!-- Set to true while a re-sort is running. -->
+    <resort>false</resort>
+
+    <!-- Metadata filled in by CI. -->
+    <commit>__CI_COMMIT_SHA</commit>
+    <version-tag>__VERSION</version-tag>
+</config>

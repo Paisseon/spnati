@@ -1,0 +1,4150 @@
+/************************************************************
+ This file contains all of the CSS that is shared by the
+ various game screens and elements.
+ ************************************************************/
+
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    touch-action: manipulation;
+}
+
+body {
+    color: #050505;
+    background-color: #050505;
+    font-size: 1.4em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-image: url("../img/backgrounds/inventory.png");
+    background-size: contain;
+    /* Sensible initial value */
+    background-position: center center;
+    background-repeat: repeat-x;
+    overflow: hidden;
+}
+
+button,
+input,
+textarea,
+select {
+    pointer-events: auto;
+    touch-action: none;
+}
+
+button>* {
+    pointer-events: none;
+}
+
+/************************************************************
+ * Bootstrap overrides.
+ ************************************************************/
+
+* {
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: initial;
+}
+
+body.modal-open {
+    margin-left: 0;
+}
+
+.pagination {
+    margin: 0.5rem 0;
+}
+
+.pagination>li:first-child>a,
+.pagination>li:first-child>span {
+    border-bottom-left-radius: 0.4rem;
+    border-top-left-radius: 0.4rem;
+}
+
+.pagination>li:last-child>a,
+.pagination>li:last-child>span {
+    border-bottom-right-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.1em;
+    margin-bottom: 0.7em;
+    margin-top: 0.7em;
+}
+
+h5 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+ul {
+    padding-left: 2em;
+}
+
+label {
+    font-weight: 500;
+}
+
+.glyphicon {
+    top: 0.1rem;
+}
+
+.tooltip {
+    font-size: 1.2rem;
+}
+.tooltip-inner {
+    border-radius: 0.4rem;
+    padding: 0.3rem 0.8rem;
+    max-width: 20rem;
+}
+
+.form-control {
+    font-size: 1.4rem;
+    height: 3.4rem;
+    padding: 0.6rem 1.2rem;
+}
+
+/************************************************************
+ * Global style classes.
+ ************************************************************/
+
+.bordered {
+    border: 0.2rem solid #111111;
+    border-radius: 0.5rem;
+    padding: 0;
+}
+
+/************************************************************
+ * Screen classes.
+ ************************************************************/
+
+.screen-container {
+    position: absolute;
+    width: 100vw;
+    height: 75vw;
+    max-width: 133.33vh;
+    max-height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.wide-screen-container {
+    position: absolute;
+    width: 100vw;
+    height: 56.25vw;
+    max-width: 177.78vh;
+    max-height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+.screen {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    margin: 0.5%;
+}
+
+.select-table>*,
+#game-table>*,
+#game-hidden-area>*,
+.table-bug-report-button,
+.hide-table-button {
+    z-index: 1000;
+}
+
+/**************************************************
+ * Positions
+ **************************************************/
+
+.farLeft {
+    left: -12.5%;
+}
+
+.left {
+    left: 0%;
+}
+
+.almostLeft {
+    left: 12.5%;
+}
+
+.halfLeft {
+    left: 25%;
+}
+
+.center {
+    left: 50%;
+}
+
+.farHalfLeft {
+    left: 75%;
+}
+
+.halfRight {
+    right: 25%;
+}
+
+.almostRight {
+    right: 12.5%;
+}
+
+.right {
+    right: 0%;
+}
+
+.farRight {
+    right: -12.5%;
+}
+
+/************************************************************
+ * Button classes.
+ ************************************************************/
+
+.smooth-button {
+    background: linear-gradient(#0088CC, #0066AA);
+    background-color: #0088CC;
+    color: black;
+    padding: 0.1em;
+}
+
+.smooth-button:hover:not(:disabled) {
+    background: linear-gradient(#80d5ff, #0088CC);
+    background-color: #55C0ff;
+}
+
+.smooth-button.red {
+    background: linear-gradient(#BB3333, #9F1616);
+    background-color: #BB3333;
+}
+
+.smooth-button.red:hover:not(:disabled) {
+    background: linear-gradient(#F88888, #BB3333);
+    background-color: #F66666;
+}
+
+.smooth-button.green {
+    background: linear-gradient(#33AA33, #168F16);
+    background-color: #33AA33;
+}
+
+.smooth-button.green:hover:not(:disabled) {
+    background: linear-gradient(#80FF80, #33AA33);
+    background-color: #66FF66;
+}
+
+.smooth-button:disabled {
+    background: linear-gradient(#CCC, #AAA);
+    background-color: #BBB;
+    color: #333;
+}
+
+.smooth-button:active:not(:disabled) {
+    padding-left: 0.15em;
+    padding-right: 0.05em;
+}
+
+.hide-table-button,
+.table-bug-report-button {
+    position: absolute;
+    width: 3.25%;
+    height: 4.50%;
+    left: 48.375%;
+    background-color: rgba(155, 155, 155, 0.5);
+}
+
+.hide-table-button {
+    bottom: 22%;
+}
+
+.table-bug-report-button {
+    bottom: 17.4%;
+}
+
+.hide-table-button:hover,
+.table-bug-report-button:hover {
+    background-color: rgba(155, 155, 155, 0.9);
+}
+
+.hide-table-button:active,
+.table-bug-report-button:active {
+    background-color: rgba(155, 155, 155, 0.75);
+}
+
+.game-menu-dropup {
+    position: absolute;
+    left: 1%;
+    bottom: 5%;
+
+    width: 7%;
+    height: 8%;
+}
+
+.menu-dropdown-button {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-dropdown-button span {
+    font-size: 2em;
+}
+
+.dropdown-menu {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.game-menu-dropup .dropdown-menu {
+    background: transparent;
+    border: 0px none;
+    width: 15em;
+    font-size: 1.4rem;
+    min-width: unset;
+}
+@media (min-resolution: 120dpi) {
+    .game-menu-dropup .dropdown-menu {
+        font-size: 18px;
+    }
+}
+ul.dropdown-menu>li {
+    margin: 0;
+    margin-top: -0.2rem;
+    padding: 0;
+}
+
+.dropdown-button-item span {
+    display: inline;
+    margin: 0 3%;
+}
+
+.dropdown-button-item {
+    width: 100%;
+
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/************************************************************
+ * Classes for modals styled like the game table.
+ ************************************************************/
+
+.modal {
+    position: absolute;
+    width: 100vw;
+    height: 75vw;
+    max-width: 133.33vh;
+    max-height: 90vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    padding-left: 1.7rem;
+}
+
+.modal-open {
+    overflow: hidden;
+}
+
+.modal-table-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0.5%;
+    overflow: hidden;
+    display: table;
+}
+
+.modal-cell-container {
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.modal-flex-container {
+    width: 100%;
+    height: 100%;
+}
+
+.table-modal .modal-dialog {
+    height: auto;
+    box-sizing: border-box;
+    margin: 0px auto;
+    padding: 0.5rem;
+    background: linear-gradient(#333333, #222222);
+    background-color: #333333;
+    color: black;
+}
+
+/* Applies the layout rules, but not the background rules. */
+.transparent-modal-dialog {
+    height: auto;
+    box-sizing: border-box;
+    margin: 0px auto;
+    padding: 0.5rem;
+}
+
+.thin-modal-dialog {
+    width: 35%;
+}
+
+.average-modal-dialog {
+    width: 50%;
+}
+
+.wide-modal-dialog {
+    width: 65%;
+}
+
+.very-wide-modal-dialog {
+    width: 80%;
+}
+
+.table-modal .modal-dialog-surface {
+    width: 100%;
+    padding: 0.5%;
+    background: radial-gradient(#888888, #666666);
+    background-color: #777777;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+.modal-flex-container .modal-dialog-surface,
+.modal-flex-container .modal-dialog {
+    height: 100%;
+}
+
+.modal-flex-container .modal-content {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    /*height: 100%;*/
+}
+
+.modal-flex-container .modal-footer {
+    margin-top: auto;
+}
+
+.table-modal .modal-content {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.table-modal .modal-header {
+    border: none;
+    font-size: 110%;
+    padding: 2%;
+}
+
+.table-modal .modal-title {
+    color: black;
+    font-size: 120%;
+}
+
+.table-modal .modal-subtitle {
+    color: black;
+    font-size: 100%;
+}
+
+.table-modal .modal-left {
+    text-align: left;
+}
+
+.table-modal .modal-body {
+    position: relative;
+    text-align: center;
+    padding: 1.5%;
+}
+
+.table-modal .modal-body-container {
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.table-modal .modal-body-stretch-container {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.table-modal .modal-body-full-container {
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.table-modal .modal-body-special-container {
+    margin: 0 auto;
+    display: inline-block;
+    width: 100%;
+}
+
+
+.table-modal .clothing-modal-container {
+    float: left;
+    width: 20%;
+    height: 100%;
+    margin: 0.5% 2.5%;
+}
+
+.table-modal .modal-clothing-image {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background-color: white;
+}
+
+.table-modal .modal-clothing-image:hover {
+    opacity: 0.7;
+}
+
+.table-modal .modal-selected-clothing-image {
+    opacity: 1;
+    background-color: white;
+}
+
+.table-modal .modal-selected-clothing-image:hover {
+    opacity: 1;
+}
+
+.table-modal .modal-footer {
+    text-align: center;
+    border: none;
+    padding: 0.5%;
+}
+
+.table-modal .modal-button {
+    height: 75%;
+    width: 25%;
+    padding: 2%;
+    font-size: 120%;
+}
+
+.table-modal .modal-button:active,
+.edit-options-row button:active {
+    padding-left: calc(2% + 0.05em);
+    padding-right: calc(2% - 0.05em);
+}
+
+.pagination li a {
+    color: black;
+    background-color: #BBBBBB;
+    border-color: black;
+    border-width: 0.1rem;
+}
+
+.pagination li a:hover {
+    color: black;
+    background-color: #DDDDDD;
+    border-color: black;
+}
+
+.pagination .active a {
+    background-color: #439AD7;
+    border-color: white;
+}
+
+.pagination .active a:hover {
+    background-color: #63AAE7;
+    border-color: white;
+}
+
+.credit-table {
+    width: 100%;
+    font-size: 100%;
+}
+
+.credit-table td {
+    padding: 0 1rem;
+}
+
+.credit-modal-label {
+    padding: 0.2rem 0;
+    background-color: lightgrey;
+}
+
+.wide-textbox {
+    width: 70%;
+    font-size: 150%;
+    text-align: center;
+}
+
+.wide-dropdown {
+    width: 70%;
+    margin: 0.5rem 0;
+    background-color: #BBBBBB;
+}
+
+#sort-dropdown:hover {
+    background-color: #DDDDDD;
+}
+
+#sort-dropdown-selection {
+    color: black;
+}
+
+.sort-dropdown-options {
+    top: 80%;
+    left: 50%;
+    right: auto;
+    width: 70%;
+    min-width: auto;
+    text-align: center;
+    font-size: inherit;
+    background-color: #FFFFFF;
+    transform: translate(-50%, 0);
+}
+
+.sort-dropdown-options>li>a:hover {
+    background-color: #63AAE7;
+    background-image: none;
+    color: white;
+}
+
+#player-tags-modal.male .player-tag-select.female,
+#player-tags-modal.male .player-tag-select option.female {
+    display: none;
+}
+
+#player-tags-modal.female .player-tag-select.male,
+#player-tags-modal.female .player-tag-select option.male {
+    display: none;
+}
+
+.player-tag-select {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    margin: 0 auto;
+    padding: 1rem 0;
+    border-bottom: 0.1rem solid #666;
+}
+
+.player-tag-select:last-child {
+    border: none;
+}
+
+.player-tag-select input,
+.player-tag-select select {
+    max-width: 50%;
+}
+
+.player-tag-select>.colorAndLabel {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 50%;
+}
+
+.player-tag-select>.colorAndLabel.range {
+    max-width: 80%;
+}
+
+.player-tag-select input[disabled] {
+    background: none;
+    border: none;
+}
+
+.player-tag-select>.colorAndLabel.range input[disabled] {
+    /*width: 25%;*/
+    min-width: 7.5rem;
+}
+
+.player-tag-select input[type=range] {
+    -webkit-appearance: none;
+    /*margin: 0.5rem 0;*/
+    margin: 2% 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+.player-tag-select input[type=range]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    background: linear-gradient(90deg, white, #f1c6a3, #c08e66, #230800);
+    width: 100%;
+    height: 100%;
+}
+
+.player-tag-select input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0.8rem;
+    height: calc(100% + 1rem);
+    margin: -0.5rem 0;
+    box-shadow: 0 0 0 0.2rem black;
+}
+
+.player-tag-select input[type=range]::-ms-track {
+    background: linear-gradient(90deg, white, #f1c6a3, #c08e66, #230800);
+}
+
+.player-tag-select input[type=range]::-ms-thumb {
+    margin: 0;
+    padding: 60% 0;
+    border: 0.2rem solid black;
+    box-shadow: none;
+}
+
+.player-tag-select input[type=range]::-moz-range-track {
+    background: linear-gradient(90deg, white, #f1c6a3, #c08e66, #230800);
+    height: 50%;
+}
+
+.player-tag-select input[type=range]::-moz-range-thumb {
+    border: 0.2rem solid black;
+    border-radius: 0;
+    width: 0.8rem;
+    height: 100%;
+    background: transparent;
+}
+
+/* Prevents the long bug report output from overflowing the modal width. */
+#bug-report-output {
+    min-width: 100%;
+    width: 0;
+    resize: none;
+    font-family: monospace;
+    font-size: 1.3rem;
+}
+
+.bug-report-out-explanation {
+    margin-top: 0.75em;
+}
+
+#bug-report-status {
+    padding-bottom: 0.5em;
+    font-size: 110%;
+}
+
+#bug-report-modal .modal-dialog-surface,
+#player-tags-modal .modal-dialog-surface {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.modal a {
+    color: hsla(207, 56%, 37%, 1);
+}
+
+.modal a:hover {
+    color: hsla(207, 56%, 28%, 1);
+}
+
+#usage-reporting-modal ul {
+    padding-left: 2rem;
+}
+
+#help-modal .modal-body {
+    overflow-y: auto;
+}
+
+.help-page h2 {
+    margin-top: 0px;
+}
+
+.faq-question {
+    margin-top: 1rem;
+}
+
+.faq-answer {
+    font-size: 85%;
+}
+
+.faq-answer ul li {
+    text-align: left;
+}
+
+.faq-poker-hands-infographic {
+    width: 100%;
+}
+
+.background-option {
+    background-size: 100% 100%;
+    width: 24rem;
+    height: 18rem;
+
+    padding: 0.5rem;
+    border: 0.3rem solid #111111;
+    border-radius: 0.3rem;
+
+    margin: 0.5rem;
+    vertical-align: top;
+
+    transition-property: border-color;
+    transition-duration: 0.5s;
+
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.background-option .background-info {
+    padding: 0.2rem 0.5rem;
+    text-align: center;
+
+    border: 0.15rem solid #111111;
+    border-radius: 0.5rem;
+
+    background-color: #FFFFFF;
+    opacity: 0.50;
+
+    font-size: 1.25rem;
+
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
+.background-option .background-title {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.background-option .background-author::before {
+    content: "by: ";
+}
+
+.background-option:hover,
+.background-option:active {
+    border-color: #FFFFFF;
+}
+
+.background-option:hover .background-info,
+.background-option:active .background-info {
+    opacity: 1.0;
+}
+
+.background-credits-container {
+    text-align: left;
+}
+
+#io-modal .modal-content {
+    overflow-y: auto;
+    max-height: 75vh;
+}
+
+.import-error {
+    font-size: 125%;
+    margin-bottom: 2%;
+    color: firebrick;
+}
+
+.options-container {
+    overflow-y: auto;
+    max-height: 45rem;
+}
+
+/************************************************************
+ * Classes for the dialogue transcript modal.
+ ************************************************************/
+#log-container {
+    width: 100%;
+    overflow-y: scroll;
+    max-height: 40rem;
+}
+
+.log-entry-container {
+    border: 0.2rem solid #111111;
+    border-radius: 0.5rem;
+    background: #F5F5F5;
+    display: flex;
+    align-items: center;
+    margin-bottom: .5%;
+    opacity: .75;
+    cursor: pointer;
+}
+
+.log-entry-container:hover {
+    opacity: 1;
+}
+
+.log-entry-label {
+    float: left;
+    margin-left: .25em;
+    width: 12.5%;
+    height: 100%;
+}
+
+.log-entry-text {
+    float: left;
+    margin-left: .5em;
+    width: 87.5%;
+    height: 100%;
+    text-align: left;
+}
+
+
+.log-entry-message {
+    width: 100%;
+    height: 100%;
+}
+
+/************************************************************
+ * Classes for the changelog / version modal.
+ ************************************************************/
+
+#version-modal .modal-body {
+    max-height: 50rem;
+    overflow-y: scroll;
+}
+
+.changelog-version-label {
+    width: 10%;
+    padding-bottom: 1.5%
+}
+
+.changelog-date-label {
+    width: 25%;
+    padding-bottom: 1.5%
+}
+
+.changelog-entry-text {
+    width: 65%;
+    padding-bottom: 1.5%
+}
+
+/************************************************************
+ * Classes for the resort modal.
+ ************************************************************/
+
+#resort-modal .modal-footer {
+    margin-top: 2rem;
+}
+
+#resort-modal .resort-link-button {
+    padding: 0.75rem;
+    font-size: 2rem;
+    color: black;
+
+    margin-bottom: 1rem;
+}
+
+/************************************************************
+ * Classes for the broken offline version modal.
+ ************************************************************/
+
+#broken-offline-modal .section-container {
+    display: flex;
+}
+
+#broken-offline-modal .section {
+    margin: 1rem;
+ }
+
+/************************************************************
+ * All of the classes needed to make the dialogue bubbles
+ * look the awesome way that they do.
+ ************************************************************/
+
+.dialogue-bubble {
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    font-size: 117%;
+    background: #F5F5F5;
+    border-radius: 1rem;
+    padding: 1.2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+}
+
+.screen .dialogue-bubble {
+    min-height: 18%;
+    top: 2%;
+}
+
+.screen .dialogue-bubble,
+.stats-box {
+    top: 1%;
+    width: 24.5%;
+    margin: 0 0.25%;
+}
+
+.dialogue-bubble>* {
+    z-index: 1;
+}
+
+.arrow-down::before,
+.arrow-left::before,
+.arrow-right::before,
+.arrow-up::before {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    content: "";
+    position: absolute;
+    background: #F5F5F5;
+    border-color: transparent black black transparent;
+    border-width: 0.25rem;
+    border-style: solid;
+}
+
+.arrow-down::before {
+    left: 50%;
+    bottom: calc(-2.5rem / 2);
+    margin-left: calc(-2.5rem / 2);
+    transform: scaleX(0.6) rotate(45deg);
+}
+
+.arrow-left::before {
+    top: 50%;
+    left: calc(-2.5rem / 2);
+    margin-top: calc(-2.5rem / 2);
+    transform: scaleY(0.6) rotate(135deg);
+}
+
+.arrow-right::before {
+    top: 50%;
+    margin-top: calc(-2.5rem / 2);
+    right: calc(-2.5rem / 2);
+    transform: scaleY(0.6) rotate(-45deg);
+}
+
+.arrow-up::before {
+    left: 50%;
+    margin-left: calc(-2.5rem / 2);
+    top: calc(-2.5rem / 2);
+    transform: scaleX(0.6) rotate(-135deg);
+}
+
+
+/************************************************************
+ * Classes for Developer Mode.
+ ************************************************************/
+
+#game-dev-export-button {
+    display: none;
+}
+
+.dev-mode #game-dev-export-button {
+    display: inline-flex;
+}
+
+.dev-select-button {
+    position: absolute;
+    right: 20%;
+}
+
+.dev-select-button.active {
+    background: linear-gradient(#80FF80, #33AA33);
+    background-color: #66FF66;
+}
+
+.edit-options-row {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+
+    display: none;
+    align-items: stretch;
+    justify-content: flex-end;
+    z-index: 1;
+    /* Force layering _over_ poses */
+}
+
+.edit-pose-row {
+    position: absolute;
+    top: 130%;
+    right: 0;
+    left: 0;
+
+    background-color: #555555;
+
+    display: none;
+    padding: 1.5% 2%;
+    z-index: 1;
+}
+
+.edit-options-row button {
+    padding: 2.5% 2%;
+    font-size: 100%;
+
+    margin-left: 1.5%;
+
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+
+    background: linear-gradient(#D9D9D9, #A6A6A6);
+    background-color: #D9D9D9;
+}
+
+.edit-options-row button:first-child {
+    margin-left: 0;
+}
+
+.edit-options-row button:hover {
+    background: linear-gradient(#FFFFFF, #D9D9D9);
+    background-color: #FFFFFF;
+}
+
+.edit-options-row .edit-pose {
+    font-size: 1.5rem;
+}
+
+.dialogue-pose-entry {
+    font-family: monospace;
+    font-size: 1.85rem;
+    line-height: 2.22rem;
+
+    width: 100%;
+    height: 100%;
+}
+
+.dialogue-edit-entry {
+    flex: 4;
+
+    font-family: monospace;
+    font-size: 1.85rem;
+    line-height: 2.22rem;
+    min-height: 11.1rem;
+    cursor: text;
+}
+
+.dialogue-edit-status {
+    flex: 1;
+
+    font-family: monospace;
+    font-size: 1.75rem;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+#export-edit-log {
+    font-family: monospace;
+    font-size: 1.45rem;
+    cursor: text;
+}
+
+#game-screen.dev-mode .dialogue-bubble {
+    z-index: 1000 !important;
+}
+
+.dialogue-bubble[data-editing="preview"] .dialogue-edit-status::after {
+    content: " (Preview)";
+}
+
+.edit-preview {
+    margin-right: auto;
+}
+
+.dialogue-edit,
+.dialogue-edit-button,
+.dialogue-entry-button {
+    display: none;
+}
+
+.dialogue-bubble[data-dev-target="true"] .dialogue-edit-button {
+    display: inline;
+}
+
+.dialogue-bubble[data-editing] .dialogue-entry-button {
+    display: inline;
+}
+
+.dialogue-bubble[data-editing] .dialogue-edit-button,
+.dialogue-bubble[data-editing] .dialogue-edit-status {
+    display: inline;
+}
+
+.dialogue-bubble[data-editing]:not([data-editing="preview"])>.dialogue {
+    display: none;
+}
+
+.dialogue-bubble[data-editing="entry"] .dialogue-edit-entry {
+    display: block;
+}
+
+.dev-mode .edit-options-row {
+    display: flex;
+}
+
+/************************************************************
+ * Classes for opponent images.
+ ************************************************************/
+
+.opponent-image-area {
+    position: absolute;
+    width: 25%;
+    height: 80%;
+    bottom: 0;
+}
+
+.opponent-image {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    margin: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+#game-screen .opponent-image-area {
+    pointer-events: none;
+}
+
+/************************************************************
+ * Classes for the title screen.
+ ************************************************************/
+
+/* Common title classes and elements: */
+
+.warning-text {
+    position: relative;
+    top: 5%;
+
+    text-align: center;
+    font-size: 130%;
+    color: #F0F0F0;
+    text-shadow:
+        -0.1rem -0.1rem 0 #000,
+        0.1rem -0.1rem 0 #000,
+        -0.1rem 0.1rem 0 #000,
+        0.1rem 0.1rem 0 #000;
+}
+
+.title-banner-container {
+    position: absolute;
+    width: 100%;
+    top: 4%;
+    pointer-events: none;
+}
+
+.title-banner-area {
+    width: 100%;
+    height: 100%;
+    padding: 0.5%;
+    background: linear-gradient(#333333, #222222);
+    background-color: #333333;
+}
+
+.title-banner {
+    width: 100%;
+    height: 100%;
+    padding: 0.1%;
+    background: linear-gradient(#888888, #666666);
+    background-color: #888888;
+}
+
+#main-title-container {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 50%;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#warning-container {
+    position: absolute;
+    top: 22.5%;
+    left: 22.5%;
+    width: 55%;
+    bottom: 0;
+}
+
+.title-menu-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+#warning-container .title-menu-buttons-container {
+    margin-top: 10%;
+}
+
+#title-load-container {
+    font-size: 4rem;
+    text-shadow:
+        -0.1rem -0.1rem 0 #000,
+        0.1rem -0.1rem 0 #000,
+        -0.1rem 0.1rem 0 #000,
+        0.1rem 0.1rem 0 #000;
+}
+
+.game-load-label {
+    color: #F0F0F0;
+}
+
+.game-load-progress {
+    color: #DD3333;
+}
+
+.game-load-progress::after {
+    content: "%";
+}
+
+.title-content-button {
+    background: #F0F0F0;
+    opacity: 0.4;
+}
+
+.title-content-button :hover {
+    background: #FFFFFF;
+}
+
+.title-content-button :active {
+    background: #F0F0F0;
+}
+
+/* Main title screen blocks: */
+
+#title-name-block {
+    height: 16%;
+    width: 80%;
+}
+
+.title-gender-size-container {
+    width: 80%;
+    height: 10.92%;
+    display: flex;
+}
+
+.title-size-block {
+    width: 60%;
+    margin-left: auto;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+#title-wardrobe-block {
+    width: 90%;
+    margin-top: 2.5%;
+}
+
+/* Name / Gender / Size block elements: */
+
+.title-gender-button {
+    width: 16.875%;
+}
+
+.title-label {
+    padding: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 160%;
+    color: #DD3333;
+    text-shadow:
+        -0.1rem -0.1rem 0 #000,
+        0.1rem -0.1rem 0 #000,
+        -0.1rem 0.1rem 0 #000,
+        0.1rem 0.1rem 0 #000;
+}
+
+#player-name-field {
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    font-size: 200%;
+    background: rgba(240, 240, 240, 1);
+}
+
+#female-gender-button {
+    margin-left: 1%;
+}
+
+#main-title-container.male #male-gender-button {
+    opacity: 1;
+}
+
+#main-title-container.female #female-gender-button {
+    opacity: 1;
+}
+
+.title-gender-image {
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    margin: 0.5rem auto;
+    background-color: white;
+}
+
+#main-title-container.male #female-size-container {
+    display: none;
+}
+
+#main-title-container.female #male-size-container {
+    display: none;
+}
+
+.small>.title-small-button {
+    opacity: 1;
+}
+
+.medium>.title-medium-button {
+    opacity: 1;
+}
+
+.large>.title-large-button {
+    opacity: 1;
+}
+
+.title-size-button {
+    width: 30%;
+}
+
+/* Title clothing block elements: */
+
+.title-clothing-container {
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.title-clothing-heading {
+    width: 10rem;
+    text-align: center;
+    padding: 0 0.5rem;
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    background: linear-gradient(lightgrey, #888888);
+    background-color: lightgrey;
+}
+
+#title-warning-label {
+    height: 2rem;
+    color: red;
+    text-align: center;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    text-shadow:
+        -0.1rem -0.1rem 0 #000,
+        0.1rem -0.1rem 0 #000,
+        -0.1rem 0.1rem 0 #000,
+        0.1rem 0.1rem 0 #000;
+}
+
+.title-clothing-button {
+    position: relative;
+    width: 15.7%;
+}
+
+/* Gallery / Start / Tag button elements: */
+
+.centered-icon-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-icon-image {
+    width: 56%;
+    height: auto;
+}
+
+.centered-icon-glyphicon {
+    width: 2em;
+    height: auto;
+    font-size: 1.25em;
+}
+
+.title-start-edge {
+    width: 18rem;
+    font-size: 200%;
+    padding: 0.25rem;
+    background: linear-gradient(#222222, #111111);
+}
+
+.title-start-button {
+    width: 100%;
+}
+
+.title-entrance-image {
+    margin-left: 0.7rem;
+    margin-top: 0.6rem;
+    margin-right: 0.2rem;
+    width: 88.5%;
+}
+
+.title-gallery-edge {
+    width: 20%;
+    height: 80%;
+
+    font-size: 200%;
+    padding: 0.1rem;
+    background: linear-gradient(#222222, #111111);
+
+    margin-right: 6.25%;
+}
+
+.title-gallery-button {
+    width: 100%;
+    height: 100%;
+}
+
+.title-tags-edge {
+    width: 20%;
+    height: 80%;
+
+    font-size: 200%;
+    padding: 0.1rem;
+    background: linear-gradient(#222222, #111111);
+
+    margin-left: 6.25%;
+}
+
+.title-tags-button {
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+}
+
+.version-label {
+    width: 15rem;
+    background: radial-gradient(#DDDDDD, #AAAAAA);
+    background-color: #AAAAAA;
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 0.5rem auto;
+    padding: 0.2rem 0.5rem;
+}
+
+.title-credit-button {
+    display: block;
+    width: 15rem;
+    height: 2.8rem;
+    font-size: 1.6rem;
+    margin: 0 auto;
+}
+
+.title-next-button {
+    display: block;
+    width: 8rem;
+    font-size: 2.2rem;
+    height: 4rem;
+    margin: 0 auto;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.banner-flair {
+    text-align: center;
+    font-size: 120%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: 0;
+    top: 17.5%;
+    position: absolute;
+    padding-top: 0.5%;
+    height: 5%;
+    width: 4%;
+}
+
+.title-settings-button {
+    width: 6%;
+    height: 7%;
+    left: 1%;
+}
+
+.title-settings-button>span {
+    font-size: 1.75em;
+}
+
+.title-bug-report-button {
+    left: 7.5%;
+}
+
+.reddit-button {
+    left: 12.0%;
+}
+
+.reddit-logo {
+    height: 100%;
+}
+
+.title-load-button {
+    left: 16.5%;
+}
+
+.title-fullscreen-button {
+    left: 21.0%;
+}
+
+.title-resort-button {
+    left: 25.5%;
+    width: 12.5%;
+    font-size: 140%;
+    padding-top: 0.1em;
+}
+
+.version-button {
+    width: 16.5%;
+    right: 17%;
+    padding-top: 0.35em;
+    line-height: 85%;
+}
+
+.version-button>.substitute-version-time {
+    font-size: 75%;
+    white-space: nowrap;
+}
+
+.title-help-button {
+    width: 15.5%;
+    height: 6.5%;
+    right: 1%;
+
+    font-size: 150%;
+
+    background: linear-gradient(#f34141, #9F1616);
+    background-color: #f34141;
+}
+
+.title-help-button:hover {
+    background: linear-gradient(#F88888, #BB3333);
+
+    background-color: #F66666;
+}
+
+#left-title-candy {
+    left: 0;
+}
+
+#right-title-candy {
+    right: 0;
+}
+
+.title-candy {
+    position: absolute;
+    bottom: 0;
+    height: 80%;
+    pointer-events: none;
+}
+
+/************************************************************
+ * Classes for the main select screen.
+ ************************************************************/
+
+.main-select-area {
+    position: absolute;
+    width: 90%;
+    height: 12%;
+    left: 5%;
+    bottom: 3%;
+    background-color: #282828;
+}
+
+.main-select-button {
+    position: absolute;
+    width: 9.5%;
+    height: 94%;
+    font-size: 140%;
+    bottom: 3%;
+}
+
+.select-random-container {
+    position: absolute;
+    height: 94%;
+    bottom: 3%;
+    right: 11.5%;
+    width: 30%;
+}
+
+.select-random-col {
+    width: 49%;
+
+    height: 100%;
+
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.select-random-col:first-child {
+    padding-right: 2%;
+}
+
+.select-quadrant-button {
+    width: 100%;
+    height: 49%;
+    white-space: nowrap;
+}
+
+.select-quadrant-button:first-child {
+    margin-bottom: 2%;
+}
+
+#main-select-button {
+    position: absolute;
+    height: 120%;
+    width: 14%;
+    right: 43%;
+    bottom: -10%;
+    font-size: 180%;
+    text-align: center;
+}
+
+#main-select-button:disabled {
+    background: linear-gradient(#AAAAAA, #888888);
+    background-color: #AAAAAA;
+}
+
+#select-advance-top {
+    position: absolute;
+    width: 16%;
+    height: 16%;
+    top: -16%;
+    left: 42%;
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #282828;
+}
+
+#select-advance-bottom {
+    position: absolute;
+    width: 16%;
+    height: 16%;
+    bottom: -16%;
+    left: 42%;
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #282828;
+}
+
+.select-back-button {
+    left: 0.5%;
+}
+
+#select-group-button {
+    left: 22%;
+}
+
+#select-group-testing-button {
+    left: 12%;
+}
+
+#select-help-button {
+    left: 32%;
+}
+
+#select-remove-all-button {
+    right: 0.5%;
+}
+
+#individual-search-button,
+#group-search-button {
+    left: 22%;
+}
+
+#group-switch-testing-button {
+    left: 12%;
+}
+
+#individual-basic-info-button,
+#group-basic-info-button {
+    right: 22%;
+}
+
+#individual-credits-button,
+#group-credits-button {
+    right: 12%;
+}
+
+#individual-more-info-button,
+#group-more-info-button {
+    right: 2%;
+}
+
+.opponent-suggestion-container {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    margin: auto;
+    top: -19%;
+    left: 0;
+    right: 0;
+}
+
+.opponent-suggestion-header {
+    position: absolute;
+    left: 0.5%;
+    top: -5%;
+    height: 5.5%;
+    width: 99%;
+    background-color: #F5F5F5;
+    text-align: center;
+}
+
+.opponent-suggestion-row {
+    width: 100%;
+    height: 50%;
+}
+
+.opponent-suggestion-cell {
+    float: left;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+}
+
+.opponent-suggestion-image {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: 100%;
+    opacity: 0.6;
+
+}
+
+.opponent-suggestion-label {
+    display: block;
+    position: relative;
+    bottom: 25%;
+    text-align: center;
+    background-color: #F5F5F5;
+    height: 11%;
+    left: 1%;
+    width: 98%;
+}
+
+.select-slot-button {
+    width: 100%;
+    height: 5.44rem;
+    /* To match small-card-image */
+    font-size: 130%;
+}
+
+.select-slot-button.suggestion-shown {
+    height: 4.5rem;
+}
+
+.prefill-select-button {
+    width: 100%;
+    height: 4rem;
+    font-size: 130%;
+    margin-bottom: 0.2rem;
+}
+
+.prefill-suggestion {
+    opacity: 0.6;
+}
+
+.suggestion-label::before {
+    font-weight: bold;
+    content: "Suggested: ";
+}
+
+.selection-badge-row {
+    position: absolute;
+    top: 8%;
+    height: 8rem;
+    width: 24.5%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.selection-badge-row .badge-icon {
+    opacity: 0.75;
+
+    height: 100%;
+    width: auto;
+}
+
+/************************************************************
+ * Classes for the new individual select screen.
+ ************************************************************/
+
+/************************************************************
+  * Classes for select screen cards.
+  ************************************************************/
+
+.selection-cards-container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 75%;
+    height: 90%;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.selection-card {
+    vertical-align: top;
+    display: inline-block;
+
+    width: 19.5%;
+    height: 44%;
+
+    margin: 0.5% 0.25%;
+    background-color: rgba(51, 51, 51, 0.65);
+
+    border: 0.2rem solid #111111;
+    border-radius: 0.5rem;
+
+    position: relative;
+    cursor: pointer;
+}
+
+/*
+.selection-card[data-highlight="new"] {
+    background-color: rgba(25, 166, 25, 0.75);
+}
+*/
+
+.selection-card-image-clip {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    overflow: hidden;
+}
+
+.selection-card-image-area {
+    position: absolute;
+    top: -1.5%;
+    left: 0;
+    right: 0;
+
+    display: inline;
+    height: 135%;
+    width: auto;
+
+    margin: 0 auto;
+}
+
+.selection-card-image-area>* {
+    width: auto;
+    height: 100%;
+
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.selection-card-sidebar {
+    position: absolute;
+
+    right: 0;
+    left: 70%;
+    top: 0;
+    bottom: 25%;
+
+    padding: 2% 2.5%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.selection-card-sidebar img {
+    width: 100%;
+    height: auto;
+    position: static;
+}
+
+.selection-card-sidebar .layer-icon {
+    opacity: 0.80;
+}
+
+.selection-card-sidebar .gender-icon {
+    opacity: 0.80;
+    margin-top: 3%;
+}
+
+.selection-card-sidebar .status-icon {
+    opacity: 0.50;
+    margin-top: 3%;
+}
+
+.badge-sidebar {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    width: 40%;
+
+    padding: 2% 2.5%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.badge-sidebar .badge-icon {
+    opacity: 0.75;
+    width: 100%;
+    height: auto;
+    position: static;
+}
+
+.selection-card-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.selection-card-footer .selection-card-label {
+    border: 0.2rem solid #111111;
+    border-radius: 0.5rem;
+    background-color: #FFFFFF;
+    opacity: 0.80;
+
+    transition-property: opacity;
+    transition-duration: 0.5s;
+
+    text-align: center;
+    padding: 2%;
+}
+
+.selection-card-footer .selection-card-name {
+    /*font-size: 110%;*/
+    font-size: 2.1rem;
+}
+
+.selection-card-footer .selection-card-source {
+    margin-top: 1%;
+    /*font-size: 65%;*/
+    font-size: 1.25rem;
+}
+
+.selection-card:hover,
+.selection-card:active {
+    background-color: rgba(221, 221, 221, 0.90);
+    transition: background-color;
+    transition-duration: 0.5s;
+}
+
+.selection-card[data-highlight=new] {
+  background-image: url("../img/new-corner.svg");
+  background-size: 38%;
+  background-repeat: no-repeat;
+  background-color: rgba(51, 74, 51, 0.65);
+}
+.selection-card[data-highlight="new"]>.badge-sidebar {
+  top: 5%;
+}
+.selection-card[data-highlight="new"]:hover,
+.selection-card[data-highlight="new"]:active {
+    background-color: rgba(102, 255, 102, 0.50);
+}
+
+.selection-card[data-highlight="testing"]:hover,
+.selection-card[data-highlight="testing"]:active,
+.selection-card[data-highlight="sponsorship"]:hover,
+.selection-card[data-highlight="sponsorship"]:active {
+    background-color: rgba(92, 197, 250, 0.6);
+}
+
+.selection-card[data-highlight="valentines"]:hover,
+.selection-card[data-highlight="valentines"]:active {
+    background-color: rgba(255, 103, 126, 0.6);
+}
+
+
+.selection-card:hover .selection-card-footer .selection-card-label,
+.selection-card:active .selection-card-footer .selection-card-label {
+    opacity: 1.0;
+
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
+
+/************************************************************
+ * Classes for the sort / filter options row.
+ ************************************************************/
+
+.selection-options-row {
+    position: absolute;
+    top: 0;
+    bottom: 90%;
+    left: 0;
+    right: 0;
+
+    width: 75%;
+
+    padding: 0.5% 1.5%;
+
+    background-color: #555555;
+
+    display: flex;
+    align-items: center;
+    flex-basis: 0;
+}
+
+.selection-options-row>* {
+    margin-left: 1%;
+}
+
+.option-component {
+    white-space: nowrap;
+    margin: 0.5% 0;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.option-component>label {
+    border: 0.2rem solid #111111;
+    border-radius: 0.5rem;
+    text-align: center;
+
+    background: linear-gradient(rgb(204, 204, 204), rgb(170, 170, 170)) rgb(204, 204, 204);
+    margin-bottom: 0.5%;
+    flex: 1;
+
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin: 0;
+
+    padding: 1% 1%;
+}
+
+.option-component>input {
+    font-size: 1.8rem;
+    line-height: 2.16rem;
+    width: auto;
+    height: auto;
+    margin: 0;
+
+    flex: 2;
+}
+
+.column-component {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.column-component label,
+.column-component input {
+    display: inline;
+}
+
+.gender-component>nav>ul {
+    margin: 0;
+    white-space: nowrap;
+
+    display: inline-flex;
+    justify-content: center;
+}
+
+.gender-component>nav>ul>li {
+    flex: 1;
+    display: inline-flex;
+}
+
+.gender-component>nav>ul a {
+    margin: 0;
+    position: static;
+    float: none;
+    padding: 0.4rem 0.8rem;
+}
+
+.sort-component {
+    width: 95%;
+    margin-bottom: 0;
+}
+
+.sort-component>button {
+    margin-bottom: 0;
+    margin-top: 0.5%;
+    width: 100%;
+    font-size: inherit;
+
+    padding: 0.5% 0;
+}
+
+.sort-component>.dropdown-menu {
+    width: 95%;
+    margin-top: 5%;
+}
+
+.sort-component>.dropdown-menu>li {
+    text-align: center;
+    font-size: inherit;
+}
+
+.sort-component>.dropdown-menu>li>a {
+    padding: 0.3rem 0.5%;
+}
+
+.select-back-btn {
+    height: 100%;
+    font-size: 140%;
+
+    margin-left: 0;
+    padding: 0.1rem 0.5em;
+    flex: 1;
+}
+
+.smooth-button.select-back-btn:active,
+.smooth-button.show-more-button:active {
+    padding-left: 0.55em;
+    padding-right: 0.45em;
+}
+
+#gender-sort-column {
+    flex: 3;
+    align-items: center;
+}
+
+#source-tag-column {
+    flex: 4;
+}
+
+#name-creator-column {
+    flex: 4;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#source-tag-column label,
+#name-creator-column label {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#source-tag-column input,
+#name-creator-column input {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left: 0px;
+}
+
+.option-component#name-component>label {
+    width: auto;
+}
+
+.option-component#name-component>input {
+    width: 100%;
+}
+
+/************************************************************
+ * Classes for the select screen details view.
+ ************************************************************/
+
+.opponent-details-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 75.5%;
+}
+
+.opponent-details-image-area {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -1.5%;
+    bottom: 10%;
+
+    z-index: -1;
+
+    display: flex;
+    justify-content: center;
+}
+
+.opponent-details-image-area>* {
+    width: auto;
+    height: 100%;
+
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.opponent-details-image-area>* {
+    width: auto;
+    height: 100%;
+}
+
+.opponent-select-button {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0.5%;
+    top: 92.5%;
+}
+
+.opponent-select-button>button {
+    width: 100%;
+    height: 100%;
+
+    font-size: 140%;
+}
+
+.opponent-details-panel {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 8%;
+
+    /*height: 35%;*/
+    height: auto;
+    /*min-height: 15%;*/
+    max-height: 82%;
+    overflow-y: auto;
+
+    background-color: #555555;
+    padding: 1.5%;
+}
+
+.opponent-details-view {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.opponent-details-field {
+    background-color: #FFFFFF;
+    margin: 0.5% 0;
+
+    font-size: 1.35rem;
+    line-height: 1.6rem;
+
+    display: flex;
+    align-items: stretch;
+    flex: 1;
+}
+
+.left-cap {
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+}
+
+.opponent-details-field>* {
+    padding: 0.5% 2%;
+
+    flex: 1;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.opponent-details-field>.opponent-details-label {
+    background: linear-gradient(rgb(204, 204, 204), rgb(170, 170, 170)) rgb(204, 204, 204);
+    height: auto;
+    justify-content: center;
+}
+
+.opponent-details-field>.opponent-details-value {
+    flex: 2.5;
+}
+
+.left-cap.opponent-details-field>.opponent-details-value {
+    border-left: 0.2rem solid #111111;
+}
+
+.opponent-details-name {
+    min-height: 17%;
+    padding: 2% 0;
+    display: block;
+}
+
+.opponent-full-name {
+    margin-bottom: 0.75rem;
+    font-size: 2.1rem;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+.opponent-source {
+    font-size: 1.6rem;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+.opponent-details-name>div {
+    padding: 0;
+}
+
+.opponent-details-description {
+    min-height: 20%;
+    padding: 1%;
+    flex-grow: 1;
+
+    font-size: 1.35rem;
+    line-height: 1.6rem;
+    flex: 3;
+
+    display: block;
+}
+
+.opponent-details-description>* {
+    display: inline;
+    padding: 0;
+    word-wrap: normal;
+}
+
+.opponent-details-field .opponent-nav-button {
+    border-style: none;
+}
+
+.opponent-epilogues-field.has-epilogues,
+.opponent-collectibles-field.has-collectibles {
+    display: flex;
+}
+
+.opponent-options-row {
+    margin: 0.5% 0;
+    flex: 1;
+
+    font-size: 1.6rem;
+    line-height: 1.98rem;
+
+    display: flex;
+}
+
+.opponent-options-row>* {
+    margin: 0 0.5%;
+}
+
+.opponent-linecount-field {
+    flex: 2;
+}
+
+.opponent-linecount-field>.opponent-details-label {
+    flex: 2;
+}
+
+.opponent-linecount-field>.opponent-details-value {
+    flex: 2;
+}
+
+.opponent-posecount-field {
+    flex: 1;
+}
+
+#individual-select-screen .alt-costume-dropdown {
+    flex: 3;
+    padding: 0.5% 2%;
+    height: auto;
+    font-size: 1.6rem;
+    line-height: 1.98rem;
+}
+
+.opponent-nav-button {
+    flex: 1;
+}
+
+.show-more-button {
+    font-size: 0.7em;
+    padding: 0 0.5em;
+    white-space: nowrap;
+}
+
+.show-more-button::after {
+    content: "More";
+}
+
+.show-more .show-more-button::after {
+    content: "Less";
+}
+
+.opponent-details-basic .extra-details-row {
+    display: none;
+}
+
+.show-more .extra-details-row {
+    display: flex;
+}
+
+.opponent-details-basic .opponent-details-description {
+    display: block;
+}
+
+.opponent-epilogues-field:not(.has-epilogues),
+.opponent-collectibles-field:not(.has-collectibles) {
+    display: none;
+}
+
+/* Modifications on non-widescreen devices
+   Note: The threshold here must match autoResizeFont(). */
+@media (max-aspect-ratio: 3/2) {
+    .wide-screen-container {
+        height: 75vw;
+        max-width: 133.33vh;
+    }
+
+    .selection-card {
+        width: 24.5%;
+        height: 38.4%;
+    }
+
+    .selection-cards-container,
+    .selection-options-row {
+        width: 70%;
+    }
+
+    .opponent-details-container {
+        left: 70.5%;
+    }
+
+    .option-component label {
+        font-size: 1rem;
+    }
+
+    .option-component input {
+        font-size: 1.2rem;
+    }
+
+    #gender-sort-column {
+        font-size: 1.1rem;
+    }
+}
+
+/************************************************************
+ * Classes for the opponent Epilogues and Collectibles views.
+ ************************************************************/
+
+.opponent-subview-card {
+    padding: 1% 2%;
+    margin: 2% 5%;
+    background: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.opponent-subview-title {
+    flex: 2;
+
+    text-align: left;
+    font-size: 2.5rem;
+}
+
+.opponent-subview-row {
+    margin: 1% 0;
+    display: flex;
+
+    font-size: 1.85rem;
+
+    flex: 1;
+    word-wrap: break-word;
+}
+
+.opponent-subview-row>* {
+    display: flex;
+    align-items: center;
+
+    padding: 0.5% 2%;
+
+    flex: 1;
+    word-wrap: break-word;
+}
+
+.opponent-subview-row>.opponent-subview-label {
+    background: linear-gradient(rgb(204, 204, 204), rgb(170, 170, 170)) rgb(204, 204, 204);
+    border-right: 0.2rem solid #111111;
+    height: auto;
+    justify-content: center;
+    flex: 1;
+}
+
+.opponent-subview-row>.opponent-subview-value {
+    flex: 3;
+}
+
+.opponent-subview-subtitle {
+    font-size: 1.5rem;
+}
+
+
+/************************************************************
+ * Classes for the old individual and group select screens.
+ ************************************************************/
+
+.long-select-advance-top {
+    position: absolute;
+    width: 36%;
+    height: 16%;
+    top: -16%;
+    left: 32%;
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #282828;
+}
+
+.long-select-advance-bottom {
+    position: absolute;
+    width: 36%;
+    height: 16%;
+    bottom: -16%;
+    left: 32%;
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #282828;
+}
+
+.stats-box {
+    position: absolute;
+    background: #F5F5F5;
+    padding: 1rem;
+    min-height: 17.6%;
+}
+
+.stats-box .stats-section,
+.stats-box .stats-section-large {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1%;
+}
+
+.stats-box .stats-section-large {
+    height: 3.6em;
+}
+
+.stats-box .stats-label {
+    display: table-cell;
+    position: relative;
+    width: 25%;
+    height: 100%;
+    left: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-right: none;
+    font-size: 88%;
+    background: linear-gradient(#CCCCCC, #AAAAAA);
+    background-color: #CCCCCC;
+    vertical-align: baseline;
+    text-align: right;
+    padding: 0.1rem 0.3rem;
+}
+
+.stats-box .stats-content {
+    display: table-cell;
+    position: relative;
+    width: 75.75%;
+    height: 100%;
+    right: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    font-size: 100%;
+    background: #F5F5F5;
+    vertical-align: baseline;
+    padding: 0.1rem 0.3rem;
+}
+
+.character-description {
+    text-align: center;
+}
+
+#group-select-area {
+    position: absolute;
+    left: 37.5%;
+    bottom: 17%;
+}
+
+.group-preset-background-row {
+    width: 100%;
+    padding: 0.2rem 0.4rem;
+    margin-top: 0.2rem;
+
+    background: #F5F5F5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#group-preset-background-label::before {
+    content: "BG: ";
+    font-weight: 500;
+}
+
+#group-preset-background-label {
+    vertical-align: middle;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left: 0.5rem;
+}
+
+#group-enable-preset-backgrounds {
+    margin: 0;
+}
+
+.group-dock-button-row {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.group-dock-button-row .hide-table-button,
+.group-dock-button-row .table-bug-report-button {
+    position: static;
+    display: inline-block;
+
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+}
+
+.select-badge-bar {
+    position: absolute;
+    width: 33%;
+    left: 0;
+    top: 1.5%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.select-badge-bar .badge-icon {
+    opacity: 0.7;
+
+    width: 100%;
+    height: auto;
+}
+
+.status-icon {
+    position: absolute;
+    opacity: 0.60;
+    width: 25%;
+    right: 0;
+    top: 18%;
+}
+
+.status-icon:hover {
+    opacity: 1.0;
+}
+
+.layer-icon {
+    position: absolute;
+    width: 19%;
+    right: 0;
+    top: 2%;
+    opacity: 80%;
+}
+
+.gender-icon {
+    position: absolute;
+    width: 19%;
+    right: 0;
+    top: 10%;
+    filter: drop-shadow(0.5rem 0.5rem 0.5rem #222);
+    opacity: 80%;
+}
+
+.wrap-text {
+    overflow-wrap: anywhere;
+}
+
+.alt-costume-dropdown {
+    background-color: rgb(243, 184, 232);
+    border-color: rgb(158, 48, 175);
+    padding: 0.125em;
+}
+
+.opponent-image-area .alt-costume-dropdown {
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+/************************************************************
+ * Classes for the selection area on the selection screen.
+ ************************************************************/
+
+.select-page-display {
+    display: table;
+    position: absolute;
+    width: 30%;
+    height: 45%;
+    bottom: 55%;
+    left: 35%;
+    text-align: center;
+    font-size: 130%;
+}
+
+.select-page-display .page-label {
+    display: table-cell;
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    left: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-top: 2%;
+    background: linear-gradient(#888888, #666666);
+    background-color: #888888;
+}
+
+.select-page-display .page-indicator {
+    display: table-cell;
+    position: absolute;
+    width: 32%;
+    height: 100%;
+    left: 34%;
+    text-align: center;
+    border-radius: 0;
+    font-size: 120%;
+}
+
+.select-page-display .of-label {
+    display: table-cell;
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    right: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-top: 2%;
+    background: linear-gradient(#888888, #666666);
+    background-color: #888888;
+}
+
+.select-page-selection {
+    display: table;
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    bottom: 3%;
+    left: 35%;
+    text-align: center;
+    font-size: 130%;
+}
+
+.select-page-selection .first-page-button {
+    display: table-cell;
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.select-page-selection .left-page-button {
+    display: table-cell;
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    left: 19%;
+    bottom: 0;
+    border-radius: 0;
+}
+
+.select-page-selection .go-page-button {
+    display: table-cell;
+    position: absolute;
+    width: 24%;
+    height: 100%;
+    left: 38%;
+    bottom: 0;
+    border-radius: 0;
+}
+
+.select-page-selection .right-page-button {
+    display: table-cell;
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    right: 19%;
+    bottom: 0;
+    border-radius: 0;
+}
+
+.select-page-selection .last-page-button {
+    display: table-cell;
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/************************************************************
+ * Classes for the table on the main game screen.
+ ************************************************************/
+
+.game-table-surface {
+    width: 100%;
+    padding: 0.5rem;
+    background: radial-gradient(#007000, #006000, #005000);
+    background-color: #006000;
+    box-sizing: border-box;
+    border: 0.2rem solid black;
+    border-radius: 0.8rem;
+}
+
+.game-table-surface-glass {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.game-table-surface-none {
+    background: rgba(255, 255, 255, 0.0);
+    border: 0 solid black;
+}
+
+.game-table-area {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    table-layout: fixed;
+}
+
+.opponent-area {
+    position: absolute;
+    width: 22rem;
+    bottom: 19%;
+    margin: 0 1.5rem;
+    padding: 0.2rem;
+    background-color: rgba(40, 40, 40, 0.75);
+}
+
+#group-select-table .alt-costume-dropdown {
+    position: absolute;
+    width: 22rem;
+    margin: 0 1.5rem;
+    bottom: 38%;
+}
+
+.opponent-area .name-label,
+.opponent-area .alt-costume-dropdown {
+    margin-bottom: 0.2rem;
+    width: 100%;
+}
+
+.opponent-card-area {
+    display: flex;
+    justify-content: space-between;
+    /* If not supported it's not a big deal */
+}
+
+.small-card-image {
+    height: 5.44rem;
+    width: 4.08rem;
+    background-color: white;
+}
+
+.small-card-image+.small-card-image {
+    margin-left: 0.2rem;
+    /* not needed if space-between works. */
+}
+
+/************************************************************
+ * Classes for the human player section of the table on the
+ * main game screen.
+ ************************************************************/
+
+.small-clothing-image {
+    width: 28%;
+    height: 47%;
+    margin-bottom: 3.5%;
+    background-color: white;
+}
+
+.clothing-float-right {
+    float: right;
+    margin-left: 3.5%;
+}
+
+.clothing-float-left {
+    float: left;
+    margin-right: 3.5%;
+}
+
+.player-area {
+    width: 100%;
+    padding: 0;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+@keyframes pulse {
+    from {
+        transform: none
+    }
+
+    to {
+        transform: scale(1.2);
+        background-color: rgb(255, 235, 235, 1.0);
+    }
+}
+
+@keyframes explode {
+    to {
+        transform: scale(100);
+        opacity: 0;
+        background-color: white;
+    }
+}
+
+#player-countdown {
+    position: absolute;
+    width: 4%;
+    height: 4%;
+    left: 48%;
+    bottom: 12.5%;
+    text-align: center;
+    font-size: 120%;
+    background-color: rgba(240, 240, 240, 1.0);
+}
+
+.pulse {
+    animation: 0.5s infinite alternate pulse;
+}
+
+.explode {
+    animation: 1s explode;
+    border: none;
+}
+
+#player-game-clothing-area {
+    position: absolute;
+    width: 33%;
+    height: 15%;
+    left: 9%;
+    bottom: 1%;
+    background-color: rgba(40, 40, 40, 0.75);
+}
+
+.player-clothing-container {
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    padding: 1.25%;
+}
+
+.player-card-area {
+    position: absolute;
+    /*width: 40.3rem;
+    height: 11.2rem;*/
+    right: 1.5%;
+    bottom: 1%;
+    padding: 0.45%;
+    background-color: rgba(40, 40, 40, 0.75);
+    display: flex;
+}
+
+.name-label {
+    text-align: center;
+    background-color: #F5F5F5;
+    padding: 0.125em;
+}
+
+.game-name-label-0 {
+    display: none;
+}
+
+#player-game-clothing-area .game-name-label-0 {
+    display: block;
+    position: absolute;
+    width: 65.5%;
+    height: 24%;
+    left: 17.25%;
+    bottom: 3%;
+}
+
+#game-clothing-label {
+    position: absolute;
+    width: 65.5%;
+    height: 22%;
+    left: 17.25%;
+    bottom: 28%;
+    font-size: 90%;
+    text-align: center;
+    background-color: #F5F5F5;
+}
+
+.large-card-image,
+.ui-minimal.prompt-exchange .large-card-image,
+#deck {
+    height: 10rem;
+    width: 7.5rem;
+    border-radius: 0.65rem;
+    border-width: 0.2rem;
+    background-color: white;
+}
+
+.large-card-image+.large-card-image {
+    margin-left: 0.4rem;
+}
+
+.dock-card {
+    position: absolute;
+    left: 46.25%;
+    bottom: 2.2%;
+}
+
+#main-game-button {
+    position: absolute;
+    width: 12%;
+    height: 8%;
+    left: 44%;
+    bottom: 5%;
+    font-size: 140%;
+}
+
+#player-masturbation-timer-box {
+    width: 10%;
+}
+
+/* remove the "clear" button that occurs in some MS browsers */
+#player-masturbation-timer-box::-ms-clear {
+    display: none;
+}
+
+/***********************************************************
+ * Classes for the Minimalist UI.
+ ***********************************************************/
+
+.ui-minimal .opponent-area {
+    background: none;
+    text-align: center;
+
+    bottom: auto;
+    top: 70%;
+    opacity: 0.5;
+
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
+.ui-minimal .opponent-revealed-cards {
+    opacity: 0.75;
+    transition-property: opacity;
+    transition-duration: 0.25s;
+}
+
+.ui-minimal .opponent-area:hover,
+.ui-minimal .opponent-area:active {
+    opacity: 1.0;
+    transition-property: opacity;
+    transition-duration: 0.25s;
+}
+
+.ui-minimal .opponent-area.current {
+    opacity: 1.0;
+    transition: none;
+}
+
+.ui-minimal .opponent-area.opponent-revealed-cards:hover,
+.ui-minimal .opponent-area.opponent-revealed-cards:active,
+.ui-minimal .opponent-area.opponent-lost {
+    opacity: 1.0;
+    transition-property: opacity;
+    transition-duration: 0.25s;
+}
+
+.ui-minimal .opponent-card-area {
+    background: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2rem;
+}
+
+.ui-minimal .small-card-image {
+    height: 4rem;
+    width: 3rem;
+    border-width: 0.15rem;
+    border-radius: 0.4rem;
+}
+
+.ui-minimal .opponent-area .small-card-image {
+    margin: 0.05rem;
+    margin-right: -2.45rem;
+    transform: translateX(-1.3rem);
+}
+
+.ui-minimal .opponent-revealed-cards .small-card-image {
+    margin-right: 0.05rem;
+    transform: none;
+
+    transition-property: margin-right, transform;
+    transition-duration: 0.5s;
+}
+
+.ui-minimal .opponent-area.opponent-lost .small-card-image,
+.ui-minimal .opponent-area.opponent-revealed-cards:hover .small-card-image,
+.ui-minimal .opponent-area.opponent-revealed-cards:active .small-card-image {
+    width: 4.125rem;
+    height: 5.5rem;
+    transition-property: width, height;
+    transition-duration: 0.25s;
+}
+
+.ui-minimal .opponent-area .name-label {
+    text-align: left;
+    display: inline;
+    padding: 1% 5%;
+    white-space: nowrap;
+}
+
+.ui-minimal .player-card-area {
+    background: none;
+    left: 57%;
+    bottom: 1%;
+    padding: 0;
+
+    justify-content: center;
+    align-items: flex-end;
+
+    opacity: 0.50;
+    transition-property: opacity;
+    transition-delay: 1s;
+    transition-duration: 0.5s;
+}
+
+.ui-minimal .player-card-area:hover,
+.ui-minimal .player-card-area:active,
+.ui-minimal.prompt-exchange .player-card-area {
+    opacity: 1.0;
+    transition-property: opacity;
+    transition-delay: 0s;
+    transition-duration: 0.25s;
+}
+
+.ui-minimal .large-card-image {
+    width: 4.125rem;
+    height: 5.5rem;
+    margin: 0 0.1rem;
+    border-width: 0.15rem;
+    border-radius: 0.4rem;
+
+    transition-property: width, height, margin, border-radius, border-width;
+    transition-duration: 0.5s;
+    transition-delay: 1s;
+}
+
+.ui-minimal .player-card-area:hover .large-card-image,
+.ui-minimal .player-card-area:active .large-card-image,
+.ui-minimal.prompt-exchange .player-card-area .large-card-image {
+    height: 10rem;
+    width: 7.5rem;
+    border-radius: 0.65rem;
+    border-width: 0.2rem;
+    margin: 0 0.2rem;
+
+    transition-duration: 0.25s;
+    transition-delay: 0s;
+}
+
+#player-game-clothing-area-minimal {
+    display: none;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-basis: 0;
+
+    position: absolute;
+
+    right: 57%;
+    bottom: 1%;
+
+    width: 33%;
+    transform: none;
+
+    transition-property: height, transform;
+    transition-duration: 0.5s;
+}
+
+.minimal-clothing-area-row {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    opacity: 0.33;
+    transform: none;
+
+    transition-property: opacity, transform;
+    transition-duration: 0.5s;
+}
+
+.minimal-clothing-area-row:first-child {
+    margin-bottom: 0.5%;
+}
+
+#player-game-clothing-area-minimal:hover .minimal-clothing-area-row,
+#player-game-clothing-area-minimal:active .minimal-clothing-area-row {
+    opacity: 1.0;
+    transition-property: opacity;
+    transition-duration: 0.25s;
+}
+
+
+.player-lost .minimal-clothing-area-row {
+    opacity: 1.0;
+    transform: translateY(30%);
+    transition-property: opacity, transform;
+    transition-duration: 0.5s;
+}
+
+.small-clothing-image-container {
+    width: 12.5%;
+    height: auto;
+    margin-left: 1%;
+    transform: none;
+
+    transition-property: width;
+    transition-duration: 0.5s;
+}
+
+
+.player-lost .small-clothing-image-container {
+    width: 20%;
+
+    transition-property: width;
+    transition-duration: 0.5s;
+}
+
+.minimal-clothing-area-row .small-clothing-image {
+    height: auto;
+    width: 100%;
+
+    margin-bottom: 0;
+    object-fit: contain;
+}
+
+.ui-minimal #player-game-clothing-area {
+    display: none;
+}
+
+.ui-minimal #player-game-clothing-area-minimal {
+    display: inline-flex;
+}
+
+.ui-minimal .game-name-label-0 {
+    display: block;
+    bottom: 1%;
+    position: absolute;
+    left: 50%;
+    min-width: 12%;
+    transform: translateX(-50%);
+}
+
+.optional-bordered {
+    border: 0.2rem solid #111111;
+    border-radius: 0.5rem;
+}
+
+.ui-minimal .optional-bordered {
+    border: none;
+}
+
+/************************************************************
+ * Classes for name labels to indicate current player, loser, etc.
+ ************************************************************/
+.name-label.loser {
+    background-color: #DD4444;
+}
+
+.name-label.tied {
+    background-color: #CCCC44;
+}
+
+.name-label.current {
+    background-color: #63AAE7
+}
+
+/************************************************************
+ * Classes for the Epilogue screens.
+ ************************************************************/
+
+#epilogue-screen {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #000;
+    text-align: center;
+}
+
+#epilogue-container {
+    width: 100%;
+    height: 100%;
+    font-size: 1.05em;
+}
+
+.epilogue-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+.epilogue-content>.epilogue-background {
+    height: 100%;
+}
+
+.epilogue-text {
+    border: 0.2rem solid #171717;
+    position: absolute;
+    background: #F5F5F5;
+
+}
+
+.epilogue-content .dialogue-bubble {
+    padding: 0.9rem;
+    margin: 0;
+    font-size: 107%;
+    border-radius: 0.7rem;
+}
+
+.epilogue-content>.epilogue-image>img {
+    width: 100%;
+}
+
+#epilogue-buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10001;
+    width: 100%;
+    height: 2.3em;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    font-size: 30px; /* default; overridden by resizeViewport() */
+}
+#epilogue-buttons:not(.debug-active) .debug {
+    display: none;
+}
+#epilogue-buttons>div {
+    position: absolute;
+    bottom: 0;
+}
+#epilogue-buttons>div:first-child {
+    left: 0.75em;
+}
+#epilogue-buttons>div:last-child {
+    right: 0.75em;
+}
+#epilogue-buttons.show, #epilogue-buttons.force-show, #epilogue-buttons.debug-active {
+    opacity: 1;
+}
+#epilogue-buttons>div>* {
+    display: inline-block;
+    padding: 0.3em;
+    border: 0 none;
+    vertical-align: middle;
+    background: transparent;
+    color: #ccc;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+#epilogue-buttons button:hover:enabled {
+    color: #fff;
+}
+#epilogue-buttons select {
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+#epilogue-buttons button:disabled {
+    opacity: 0.4;
+}
+
+.modal-footer-button-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 5%;
+}
+
+.modal-footer-button-row::before,
+.modal-footer-button-row::after {
+    clear: none;
+    content: none;
+}
+
+.table-modal .modal-button.epilogue-modal-button {
+    height: auto;
+}
+
+#epilogue-modal .modal-body-container {
+    overflow-y: auto;
+    max-height: 40rem;
+}
+
+#epilogue-modal .modal-header hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid #333;
+    width: 25%;
+}
+
+#epilogue-header-tip {
+    font-style: italic;
+    font-size: 105%;
+}
+
+#epilogue-header-tip::before {
+    content: "Tip: ";
+}
+
+#epilogue-list {
+    list-style: none;
+    text-align: centred;
+    padding-left: 0;
+}
+
+.epilogue-entry {
+    padding: 0.2rem 0.5rem;
+}
+
+.epilogue-entry button {
+    color: black;
+    background: #BBBBBB;
+    border: 0.2rem solid black;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    text-decoration: none;
+}
+
+.epilogue-entry.active button {
+    background-color: #439AD7;
+    border-color: white;
+}
+
+.epilogue-entry button:hover {
+    background: #DDDDDD;
+}
+
+.epilogue-entry.unlocked button::after {
+    color: darkgreen;
+    content: "\2714";
+}
+
+.epilogue-entry.unavailable {
+    margin: 0.1rem 0;
+}
+
+.epilogue-entry.unavailable .epilogue-title {
+    text-decoration: line-through;
+}
+
+.epilogue-entry.unavailable button::after {
+    content: " (Unavailable)";
+}
+
+.epilogue-entry.unavailable .epilogue-hint {
+    font-style: italic;
+}
+
+.epilogue-entry.unavailable .epilogue-hint::before {
+    content: "Hint: ";
+}
+
+.epilogue-viewport {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.epilogue-canvas {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.epilogue-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.particle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+}
+
+.spinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -1.1rem -5rem;
+    width: 10rem;
+    height: 2.2rem;
+    text-align: center;
+    font-size: 180%;
+    color: white;
+}
+
+.spinner-pip {
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: #CCC;
+
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: ep-bouncedelay 1.4s infinite ease-in-out both;
+    animation: ep-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner>.spinner-pip:nth-child(1) {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.spinner>.spinner-pip:nth-child(2) {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+@-webkit-keyframes ep-bouncedelay {
+
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0)
+    }
+
+    40% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes ep-bouncedelay {
+
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+
+/************************************************************
+ * Classes for the Gallery screens.
+ ************************************************************/
+
+.gallery-select-block {
+    position: absolute;
+    width: 30%;
+    height: 10%;
+    top: 8%;
+}
+
+.gallery-select-button {
+    height: 100%;
+    font-size: 140%;
+}
+
+.gallery-back-button {
+    width: 25%;
+    margin-right: 1%;
+}
+
+.gallery-switch-button {
+    width: 47%;
+    margin-left: 1%;
+}
+
+.gallery-character-filter {
+    position: absolute;
+    left: 24%;
+    top: 10%;
+
+    width: 20%;
+    height: 6%;
+
+    font-size: 110%;
+}
+
+/************************************************************
+ * Classes for the Collectibles Gallery.
+ ************************************************************/
+
+.collectibles-pane {
+    position: absolute;
+    top: 20%;
+    height: 75%;
+    width: 32%;
+}
+
+#collectibles-list-pane {
+    left: 0;
+    background-color: rgba(200, 200, 200, 75%);
+    overflow-y: auto;
+}
+
+#collectibles-text-pane {
+    left: 34%;
+    background-color: rgba(255, 255, 255, 85%);
+    overflow-y: auto;
+}
+
+#collectibles-image-pane {
+    left: 68%;
+    background-color: rgba(60, 60, 60, 75%);
+}
+
+.collectible-content {
+    margin-left: 3%;
+}
+
+.collectible-subtitle-container {
+    margin-top: 1rem;
+}
+
+.collectible-unlock-container>div {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+#collectible-gallery-screen hr {
+    width: 85%;
+}
+
+#collectible-title {
+    margin-bottom: 1rem;
+}
+
+#collectible-progress {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#collectible-progress-bar {
+    background: linear-gradient(#0088CC, #0066AA);
+}
+
+#collectible-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+
+    max-width: 95%;
+    max-height: 95%;
+    width: auto;
+    height: auto;
+
+}
+
+
+.collectibles-list-item {
+    background-color: rgb(72, 72, 72);
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 2.5%;
+    width: 95%;
+    height: 12.5%;
+}
+
+.collectibles-list-item:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+.collectibles-item-icon {
+    position: relative;
+    float: left;
+    top: 10%;
+    height: 80%;
+    max-width: 25%;
+    margin-right: 5%;
+    margin-left: 1%;
+}
+
+.collectibles-item-title {
+    position: relative;
+    top: 7%;
+    height: 40%;
+    font-size: 105%;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.collectibles-item-subtitle {
+    font-size: 82%;
+    margin-right: 0.25em;
+}
+
+.collectibles-modal-dialog {
+    width: 60%;
+}
+
+.collectibles-modal-dialog .modal-dialog-surface {
+    background-color: rgba(255, 255, 255, 85%);
+}
+
+#collectible-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+#collectible-info-thumbnail {
+    height: 6em;
+}
+
+.collectible-info-text {
+    margin-left: 2em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#collectible-info-title {
+    margin-top: 0.1em;
+    margin-bottom: 0.2em;
+    font-size: 2em;
+    font-weight: 500;
+    line-height: 1.1;
+    text-align: left;
+}
+
+#collectible-info-subtitle {
+    margin-bottom: 0.1em;
+    text-align: left;
+}
+
+#collectibles-info-modal .modal-thin-padding {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+/************************************************************
+ * Classes for the Epilogues Gallery.
+ ************************************************************/
+
+#gallery-gender-block {
+    position: absolute;
+    width: 30%;
+    right: 25%;
+    top: 8%;
+}
+
+.gallery-gender-button {
+    width: 23%;
+    height: 100%;
+    background: #F0F0F0;
+}
+
+#gallery-endings-block {
+    position: absolute;
+    top: 20%;
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 62%;
+}
+
+.gallery-ending {
+    width: 18%;
+    border: 0.3rem solid #dedede;
+    border-radius: 2%;
+    height: 23%;
+    margin-right: 0.5%;
+    margin-bottom: 2%;
+    background-size: auto 100%;
+    background-position: 50%;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.gallery-ending:hover {
+    opacity: 1;
+}
+
+.empty-thumbnail {
+    border: none;
+    pointer-events: none;
+}
+
+.unlocked-thumbnail {
+    background-image: url("../img/unknown.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 70% auto;
+    background-color: #000;
+    opacity: 1;
+}
+
+.unlocked-thumbnail:hover {
+    background-color: #333;
+}
+
+#selected-ending-previev.unlocked-thumbnail {
+    background-color: #000;
+    background-size: 60% auto;
+}
+
+#gallery-controls-block {
+    position: absolute;
+    width: 90%;
+    height: 12%;
+    bottom: 3%;
+}
+
+#gallery-selected-ending-block {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 25%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 0.8rem;
+    border-width: thin;
+    border-style: solid;
+}
+
+#gallery-selected-ending-block>label {
+    margin-left: 0.25em;
+}
+
+#selected-ending-previev {
+    height: 35%;
+    width: 100%;
+    background-size: auto 100%;
+    background-position: 50% 50%;
+    margin-bottom: 3%;
+    border-radius: 0.8rem;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#gallery-selected-ending-block label {
+    text-shadow: 0px 0px 2px #aaa;
+}
+
+#gallery-prev-page-button {
+    left: 30%;
+}
+
+#gallery-next-page-button {
+    left: 40%;
+}
+
+#gallery-start-ending-button {
+    left: 72.3%;
+}
+
+.female-style {
+    color: #f0869b;
+    text-shadow: none;
+}
+
+.male-style {
+    color: #7ba1e4;
+    text-shadow: none;
+}
+
+/************************************************************
+ * Debug stuff
+ ************************************************************/
+
+.debug-button,
+.dev-select-button {
+    position: absolute;
+    width: 3em;
+    height: 2em;
+    background-color: #F5F5F5;
+}
+
+.opponent-area .debug-button,
+.opponent-area .dev-select-button {
+    top: -2.25em;
+}
+
+.opponent-area .debug-button {
+    right: 0;
+}
+
+#debug-button-0 {
+    left: 1.5%;
+    bottom: 14%;
+}
+
+.debug-button.active {
+    background: linear-gradient(#BB3333, #9F1616);
+    background-color: #BB3333;
+}
+
+.collectible-button-container {
+    position: absolute;
+    width: 22rem;
+    top: 65%;
+    margin: 0 1.5rem;
+}
+
+.collectible-button {
+    width: 4.5rem;
+    height: 3rem;
+    padding: 0.1rem;
+    position: absolute;
+    animation: 2.5s ease-in-out 0s infinite alternate flash-collectible-button;
+}
+
+@keyframes flash-collectible-button {
+    from {
+        background-color: #9F1616
+    }
+
+    to {
+        background-color: #F88888
+    }
+}
+
+.collectible-button:hover {
+    background: linear-gradient(#F88888, #BB3333);
+    background-color: #F66666;
+    animation: none;
+}
+
+.collectible-button img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: baseline;
+}
+
+/************************************************************
+ * Global override classes.
+ ************************************************************/
+
+.clear {
+    background: transparent;
+}
+
+.tight {
+    width: auto;
+}
+
+.never-hide {
+    visibility: visible;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+
+/************************************************************
+ * UX
+ ************************************************************/
+
+.title-candy,
+#main-title-container,
+.player-card-area,
+.player-card-area input,
+.opponent-card-area,
+.opponent-image-area,
+.player-clothing-container,
+.minimal-clothing-area-row {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.focus-indicators-enabled a:focus,
+.focus-indicators-enabled input[type=image]:focus,
+.focus-indicators-enabled button:focus {
+    outline: 1px dotted #fff;
+    outline-offset: -1px;
+}
+:focus {
+    outline: none;
+}

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<collectibles>
+    <collectible id="poem" img="opponents/monika/poem-1.png" thumbnail="opponents/monika/poem-1.png">
+        <title>&lt;i&gt;The Depths&lt;/i&gt;</title>
+        <subtitle>A poem written in Monika's impeccably neat handwriting.</subtitle>
+        <text>
+            &lt;div class="text-center small"&gt;&lt;i&gt;
+            With pen in hand I look to the sky &lt;br/&gt;
+            And stand at the edge of a vast web&lt;br/&gt;
+            Holding infinite choices&lt;br/&gt;
+            &lt;br/&gt;
+            A wave of color and noise&lt;br/&gt;
+            Spills and splatters before me&lt;br/&gt;
+            Red, white, green, blue, black&lt;br/&gt;
+            Sights and sounds waiting just below&lt;br/&gt;
+            &lt;br/&gt;
+            Try as I might, I can't see the bottom.&lt;br/&gt;
+            What lies beneath? &lt;br/&gt;
+            Danger? Knowledge? Love? &lt;br/&gt;
+            &lt;br/&gt;
+            Swallowing my fears, I plunge into the depths... &lt;br/&gt;
+            &lt;/i&gt;&lt;/div&gt;
+        </text>
+        <unlock>Win a game against Monika.</unlock>
+    </collectible>
+</collectibles>

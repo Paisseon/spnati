@@ -1,0 +1,730 @@
+<version-info>
+    <current version="91.98.8" />
+    <changelog>
+        <version number="91.98.8" timestamp="1600203702278">Paisseon's unofficial iOS port v1.0</version>
+        <version number="12.91.3" timestamp="1600203702277">Dialogue updates for Dust, Jason, Meia, Jura, Chara, Saki N, Jim, Neptune, Deimos, Sheena, and Bernadetta.</version>
+        <version number="12.91.2" timestamp="1599914503852">Returns Anna to Testing with an epilogue together with Shamir and Tharja. Dialogue updates for Meia, Neptune, Supernova, Cynthia, Deimos, Natsuki, Amy, Chara, Saki N, Jessie, Yunyun, Streaming-chan, Lucina, Jason, Pyrrha, Jim, and Jura. New pose for Moon.</version>
+        <version number="12.91.1" timestamp="1599547706555">Adds Yusuke to Testing. Updates to Futaba, Haru, and N, mainly targeting Yusuke. Also updates to Aella, Joey, Meia, Miko, Jessie, Saki N, Laevatein, and Deimos.</version>
+        <version number="12.91.0" timestamp="1599412354755">Adds Galatea to the main roster. Model update for Beatrix. Updates for Jim, Meia, Myriam, Laevatein, Revy, Miko, Saki ZLS, Deimos, Akko, Orendi, Komi-san, Neptune, Spooky, Emi, Cynthia, and Ribbon Girl.</version>
+        <version number="12.90.1" timestamp="1599083003695">Spooky and Shena (with updated epilogue) returned to main roster. Model update for Myriam. Dialogue updates for Chazz, Jason, Cynthia, Neptune, Chara, Meia, Jessie, Deimos, Emi, Laevatein, Myriam, Erufuda, and Arash.</version>
+        <version number="12.90.0" timestamp="1598648172065">Deimos added to the testing roster. Spooky and Sheena moved to the testing roster with new models. Dialogue updates for Meia (and new and tweaked poses), Jessie, Spooky, Komi-san, Cynthia, Laevatein, Galatea, Neptune, Chara (and model update), Supernova, Megumin (and poses reconstructed and tweaked), Jim, Brock, Pyrrha, and Sheena.</version>
+        <version number="12.89.1" timestamp="1598044126161">Updates to Supernova, Moon, Bernadetta, Chara, Cynthia, Meia, Jura, Neptune, Jim, Laevatein, Estelle, and Revy (reaching 10k lines).</version>
+        <version number="12.89.0" timestamp="1597701282388">Adds Marinette and Adrien to testing and post time skip war outfit to Bernadetta. Dialogue updates to Chara, Moon, Sola, Supernova, Neptune, Meia, Jura, Revy, Laevatein, Lucina, Jessie, Pyrrha, Cynthia, Komi-san, Saki N.</version>
+        <version number="12.88.4" timestamp="1597175006997">Updates to Chara, Nugi-chan, Meia, Neptune, Laevatein, Lucy, Arash (with new poses), Jason, Supernova, Megumin, Jura, Revy, Rin, Pyrrha, Cynthia, Erufuda, Jim, Jessie, Kokichi, and Galatea.</version>
+        <version number="12.88.3" timestamp="1596490365675">Dialogue updates for Lucina, Pyrrha, Jessie, Megumin, Laevatein, Joey (with minor model update), Meia, Cynthia, Bernadetta, Neptune, Komi-san, and Futaba, with a special interaction between Bernie and Nep accompanied by a collectible.</version>
+        <version number="12.88.2" timestamp="1596200618048">Dialogue updates for Yunyun, Meia, Jura, Revy, Jessie, Cynthia, Laevatein, Chara, Neptune, Pyrrha, Jim, Brock, Jason, Galatea, Supernova, Megumin, Bernadetta, and Weiss. Image adjustments for Meia. Added two collectibles to Galatea.</version>
+        <version number="12.88.1" timestamp="1595353531953">Model update for Chara, model patches for Meia, and new poses for Galatea; dialogue updates for Arash, Chara, Cynthia, Galatea, Jessie, Jura, Laevatein, Moon, Neptune, Revy, Sayaka, Supernova, Tomoko, and Yunyun.</version>
+        <version number="12.88.0" timestamp="1595031714211">Adds support for sprite parenting, fine-grained animation looping controls, and sparse keyframes to the epilogue engine. Updates to Jim, Laevatein, Sayaka, Meia, Komi-san, and Myriam. Bug fixes for Amy, Kizuna, Natsuki, Sakura, and Sei.</version>
+        <version number="12.87.10" timestamp="1594942990823">Fix for scaling bug with Chrome 84; Dialogue updates for Miko, Jessie, Neptune, Cynthia, Meia, Chara, Supernova, Laevatein, and  Jason; minor bugfixes for Elizabeth (and Mercy, offline).</version>
+        <version number="12.87.9" timestamp="1594761002819">Dialogue updates for Neptune, Bernadetta, Ryuko, Meia, Jura, Revy, Cynthia, Chara, Komi-san, Miko, Laevatein, Supernova, Dust, and Megumin.</version>
+        <version number="12.87.8" timestamp="1594497074939">Dialogue updates for Meia, Chara, Neptune, Amy, Jessie, Supernova, and Moon. Image updates for Arash. Extended Moon's epilogue.</version>
+        <version number="12.87.7" timestamp="1594297784100">Updates for Kizuna, Meia, Supernova, Neptune, Bernadetta, Laevatein, Jason, Misato, Pyrrha, Yunyun, Miko, and Saki (ZLS).</version>
+        <version number="12.87.6" timestamp="1594101474454">Dialogue updates for Kazuma and bugfixes for Pyrrha.</version>
+        <version number="12.87.5" timestamp="1594098903466">Dialogue updates for Komi-san and Yuelia; minor artwork fix for Revy.</version>
+        <version number="12.87.4" timestamp="1594038368833">Supernova update with new collectible; dialogue updates for Laevatein, Pyrrha, and Neptune.</version>
+        <version number="12.87.3" timestamp="1593982105035">Updates Catria's dialogue, fixes typos and grammatical errors in some of Elsa's lines, and applies some minor refactoring to the game internals.</version>
+        <version number="12.87.2" timestamp="1593975722598">Dialogue updates and bugfixes for Meia, Yunyun, Emi, Supernove, Neptune, Cynthia, Galatea, Jessie, Komi-san, Laevatein, Catria, Jim, Elsa; also adds a new collectible for Elsa.</version>
+        <version number="12.87.1" timestamp="1593641540151">Returns Sayaka to the Main Roster! New model for Supernova; updates to Laevatein, Yuelia, Ribbon Girl, Miko, Meia, Jura, Revy, Myriam, Emi, Megumin, Neptune, Chara, YunYun, and Estelle.</version>
+        <version number="12.87.0" timestamp="1593442657138">Adds PA-15 to the Main Roster! Updates to Meia, Jura, Revy, Neptune, Lucina, and Komi-san.</version>
+        <version number="12.86.1" timestamp="1593381164878">Adds RWBY Volume 7 costume to Weiss. Small updates to Elsa, Jason, and Neptume.</version>
+        <version number="12.86.0" timestamp="1593351536601">Returns Jason to Testing with a major update; adds dialogue updates and fixes for Supernova, Cynthia, Jessie, Emi, Catria, Neptune, Bernadetta, Meia, Revy, PA-15, and Jim; adds art updates for Chara.</version>
+        <version number="12.85.3" timestamp="1593153722396">Adds revamped Orendi to the main roster! Updates to Jessie, Cynthia, Neptune, Meia, Jura, Revy, Yuelia, Spooky, Weiss, Supernova, Saki Y, and Emi.</version>
+        <version number="12.85.2" timestamp="1593067501985">Updates for Neptune, Jessie, Cynthia (responses to Tomoko and Akko), Supernova, Nugi-chan, Sayaka, and Syrenne (responses to Jessie).</version>
+        <version number="12.85.1" timestamp="1592965947187">Dialogue updates for Neptune, Chara, and Ribbon Girl</version>
+        <version number="12.85.0" timestamp="1592951936746">Adds Saki Nikaidou to the main roster! Updates to Orendi and Supernova, and Nugi-chan's 11th daily update.</version>
+        <version number="12.84.5" timestamp="1592936012069">Dialogue updates for Tomoko, Rin, and Saki (ZLS), plus additional bugfixes for Rin and Caulifla.</version>
+        <version number="12.84.4" timestamp="1592873595648">Dialogue updates for Neptune, Weiss, and Megumin.</version>
+        <version number="12.84.3" timestamp="1592854267367"> Updates to Neptune, Saki (ZLS), Myriam, Chara, and Nugi-chan.</version>
+        <version number="12.84.2" timestamp="1592769934744">Returned Jim Raynor to the Testing Roster with a model rework!</version>
+        <version number="12.84.1" timestamp="1592751732332">Bugfixes for Neptune and Rin.</version>
+        <version number="12.84.0" timestamp="1592716673482">Adds Emi's "Dead Man's Tale" epilogue; adds new collectibles for Syrenne, Ini, Emi, and Rin; adds some new art for Emi and Rin; adds additional dialogue and bugfixes for Orendi, Supernova, Sayaka, PA-15, Syrenne, Ini, Emi, and Rin. Also moves Marinette to the offline roster temporarily, in anticipation of a major upcoming rework.</version>
+        <version number="12.83.3" timestamp="1592686437932">Dialogue and art updates for Megumin.</version>
+        <version number="12.83.2" timestamp="1592685758723">Dialogue updates for Weiss.</version>
+        <version number="12.83.1" timestamp="1592682079382">Dialogue updates for Nugi-chan and Neptune.</version>
+        <version number="12.83.0" timestamp="1592584861533">Adds Neptune to the Testing Tables!</version>
+        <version number="12.82.5" timestamp="1592532705673">Dialogue updates for Shimakaze, PA-15, and Joey.</version>
+        <version number="12.82.4" timestamp="1592423834476">Pyrrha rejoins Testing! Dialogue updates for Nugi-chan, Orendi, Supernova, Meia, and Revy.</version>
+        <version number="12.82.3" timestamp="1592404327374">Adds Erufuda to the Main Roster!</version>
+        <version number="12.82.2" timestamp="1592319406678">Bugfixes for Komi-san and Brock; Dialogue updates for Cynthia and PA-15.</version>
+        <version number="12.82.1" timestamp="1592206148840">Dialogue updates for Kokichi, Estelle, Chara, Weiss, and Sayaka, plus additional costume updates for Sayaka.</version>
+        <version number="12.82.0" timestamp="1592093859529">Started the 2020 Summer Event! Added new summer costumes for Estelle and Weiss Schnee!</version>
+        <version number="12.81.4" timestamp="1592081452596">Fixed a bug where characters on Preset Tables would sometimes appear with the wrong graphics and label.</version>
+        <version number="12.81.3" timestamp="1592077143921">Internal refactoring of code related to game opponents.</version>
+        <version number="12.81.2" timestamp="1591996173912">Dialogue updates and fixes for Arash, Supernova, and Tomoko.</version>
+        <version number="12.81.1" timestamp="1591921651585">Fixes scrambled roster sort ordering on initial load.</version>
+        <version number="12.81.0" timestamp="1591839697983">Reworked the Testing roster UI, and fixed bugs with preset costumes.</version>
+        <version number="12.80.14" timestamp="1591830203134">Dialogue updates for Orendi; typo fixes for Aimee and Marinette.</version>
+        <version number="12.80.13" timestamp="1591819377663">Dialogue updates and bug fixes for PA-15, Cynthia, Lucy, Supernova, and Jessie; art updates for Lucy; fixes issues with persistent dialogue markers.</version>
+        <version number="12.80.12" timestamp="1591753332311">Adds Shantae to the Main Roster!</version>
+        <version number="12.80.11" timestamp="1591683581364">Dialogue and art updates for Brock; Dialogue updates for Rin and Jessie.</version>
+        <version number="12.80.10" timestamp="1591643727793">Optimized character loading.</version>
+        <version number="12.80.9" timestamp="1591627327425">Fixes game freezes when selecting and playing epilogues.</version>
+        <version number="12.80.8" timestamp="1591553233942">Returned Orendi to the Testing Tables! Dialogue updates for Supernova, Aella, Meia, Anna, Sanako, Cynthia, PA-15, Erufuda, Nami, Shantae, and Beatrix. New poses for Supernova. New models for Orendi and Erufuda.</version>
+        <version number="12.80.7" timestamp="1591367797727">Art updates and new collectibles for Dust; Art and dialogue updates for Orendi; Dialogue updates for Cynthia; Dialogue fixes for Mary</version>
+        <version number="12.80.6" timestamp="1591308604196">Adds Mary to the main roster!</version>
+        <version number="12.80.5" timestamp="1591103676040">Dialogue and art updates for Mary.</version>
+        <version number="12.80.4" timestamp="1591061754832">Adds Komi-san to the live roster!</version>
+        <version number="12.80.3" timestamp="1591055193131">Bugfixes for Megumin, Tomoko, and Tharja; added additional dialogue for Tomoko, Estelle, Bernadetta, Anna, and Shamir.</version>
+        <version number="12.80.2" timestamp="1590977422003">Adds Shamir to the live roster!</version>
+        <version number="12.80.1" timestamp="1590959348938">Art updates for Dust.</version>
+        <version number="12.80.0" timestamp="1590785695984">Adds Myriam to the Testing Tables! Dialogue updates for Mary, Elsa, Chara, PA-15, Meia, Jura, Revy, Nami, Amy, Komi-san, and Megumin with Tomoko.</version>
+        <version number="12.79.0" timestamp="1590562345723">Adds PA-15 to the Testing Tables!</version>
+        <version number="12.78.0" timestamp="1590520031367">Adds Connie to the Testing Tables! Dialogue updates for Komi-san, Aella, Futaba, Mulan, Natsuki, Chara, and Mary.</version>
+        <version number="12.77.0" timestamp="1590350440472">Adds Chara Dreemurr to the Testing Tables! Dialogue updates for Anna, Shantae, Jolyne, Tomoko, Rin, Moon, Cynthia, Sayaka, Meia, Jura, Revy, Saki ZLS, Miko, Elsa, Megumin, Weiss, Akko, Futaba, Mulan, Natsuki, Arash, and Shamir. Art updates for Shamir. New models for Jolyne, Lucy, and Moon.</version>
+        <version number="12.76.0" timestamp="1589910884243">Added Bernadetta and Elsa to the Testing Tables! Dialogue updates for Komi-san, Kokichi, and Mary, and Moon. New art and collectibles for Pinkie Pie.</version>
+        <version number="12.75.1" timestamp="1589744263444">Dialogue updates for Sayaka, Galatea, Cynthia, Nami, Shantae, Jessie. Art update for Moon.</version>
+        <version number="12.75.0" timestamp="1589357694585">Adds Galatea and Jim to the Testing Tables! Dialogue updates for Meia, Mary, Aella, Brock, Cynthia, Lucina, Jura, and Sayaka.</version>
+        <version number="12.74.8" timestamp="1588877066097">Fix for one of Nami's collectibles; minor dialogue updates for Lucy.</version>
+        <version number="12.74.7" timestamp="1588769669348">Art updates for Tomoko.</version>
+        <version number="12.74.6" timestamp="1588568412192">Dialogue updates for Anna, Shamir, and Tharja; added Collectibles for Tomoko; bug fixes for Caulifla</version>
+        <version number="12.74.5" timestamp="1588528055335">Megumin epilogue! Updates to Tharja, Anna, Meia, Ribbon Girl, Dust, Komi-san, and Cynthia.</version>
+        <version number="12.74.4" timestamp="1588450612344">Updates to Sayaka, Jessie, Cynthia, and Amy.</version>
+        <version number="12.74.3" timestamp="1588400698058">Updates to Meia, Roll, Futaba, Tomoko, Cynthia, Jessie, Joey, Ribbon Girl, Aella, Shamir, Tharja, and Anna.</version>
+        <version number="12.74.2" timestamp="1588134771411">Shantae returns to the Testing Tables; updates for Shamir.</version>
+        <version number="12.74.1" timestamp="1588112716363">Catria epilogue part 1; moves Sayaka to the Testing Tables for a rework; updates for Shamir, Lucina, Mary, Anna, and Guzma, as well as minor tweaks and fixes for other characters.</version>
+        <version number="12.74.0" timestamp="1587975118347">Adds Anna to testing; Dialogue updates to Haru, Cynthia, Jessie.</version>
+        <version number="12.73.11" timestamp="1587868677374">Bugfixes for Kazuma (and sets his "Kazuko" costume to be always online); dialogue updates for Shamir (to support an upcoming character)</version>
+        <version number="12.73.10" timestamp="1587692402679">Added responses from Revy to a number of characters, plus some new art; Added a new interaction between Meia and Komi-san/Revy, plus reworded an existing line targeted towards the former.</version>
+        <version number="12.73.9" timestamp="1587499763245">Fixed mistargeted lines for Komi-san, and tweaked some of Cynthia's poses slightly.</version>
+        <version number="12.73.8" timestamp="1587295011021">New conversation between Jessie and Cynthia.</version>
+        <version number="12.73.7" timestamp="1587280611802">Bugfixes for Kazuma, plus major targeting updates for Saki (ZLS) and Miko.</version>
+        <version number="12.73.6" timestamp="1587230593940">Dialogue updates for Nami, Cynthia, and Jessie, and bugfixes for Revy.</version>
+        <version number="12.73.5" timestamp="1587146076229">Bugfixes for Maki and Komi-san, plus dialogue additions for Arash (who has just hit 1000 lines)!</version>
+        <version number="12.73.4" timestamp="1587099207432">Updates for Jin, plus a bugfix for Sayori.</version>
+        <version number="12.73.3" timestamp="1587083626764">Bugfixes for Ryuji.</version>
+        <version number="12.73.2" timestamp="1587072095495">Dialogue updates for Sayori!</version>
+        <version number="12.73.1" timestamp="1586919325895">Dialogue additions and bugfixes for Brock and Komi-san.</version>
+        <version number="12.73.0" timestamp="1586549797912">Starts the 2020 Easter Event.</version>
+        <version number="12.72.2" timestamp="1586488837111">We hope you enjoyed the April Fools characters! Adds Cynthia to the main roster! Updates to Catria, Jura, Meia, Jessie, Megumin, Amy, Sakura, and several Testing Table characters. Moves Moon to the Testing table with a big update. Fixes issues with save codes in Incognito mode. Adds a new style and a bug report button to the Epilogue player.</version>
+        <version number="12.72.1" timestamp="1585633425585">Adds Chihiro to the main roster!</version>
+        <version number="12.72.0" timestamp="1584897973000">Adds a fullscreen mode to the game. Fixes bugs in Caulifla, Maki, and Rin. Adds new dialogue for Weiss, Brock, Rin, Mary, Jessie, Arash, Meia, and Revy. Adds new art for Cynthia and Megumin.</version>
+        <version number="12.71.6" timestamp="1584421573812">Adds Rainbow Dash to the main roster!</version>
+        <version number="12.71.5" timestamp="1583849246197">Adds Yuelia to the main roster!</version>
+        <version number="12.71.4" timestamp="1583381204135">Minor bugfixes for Megumin.</version>
+        <version number="12.71.3" timestamp="1583359633193">Caulifla line additions, significant Lucina line update, and a Megumin posing update.</version>
+        <version number="12.71.2" timestamp="1583208803422">Bugfixes and sponsorship tune-ups for Rainbow Dash, and additional responses from Gaige to Meia &amp; Megumin.</version>
+        <version number="12.71.1" timestamp="1583206485372">Updates to Erufuda, Megumin, and Yuelia</version>
+        <version number="12.71.0" timestamp="1583078626747">Adds Lucy Heartfilia to testing; pose tweaks for Revy and dialogue updates for Akko, Amy, Caulifla, Chazz, Futaba, Gaige, Kazuma, Mary, Megumin, Meia, Natsuki, Revy, Sakura, Streaming-chan, and Yuelia.</version>
+        <version number="12.70.5" timestamp="1582770000936">Performed minor housekeeping for Amy, Mulan, Natsuki, Sakura, Starfire, and Mary.
+Added greetings for Revy to a few characters.
+Fixed dialogue bugs with Rarity.
+Fixed sponsorship-reported bugs and other grammatical mistakes for Rainbow Dash, plus tweaked epilogue images and added an epilogue scene.
+Added extra targeting and dialogue for Mary.</version>
+        <version number="12.70.4" timestamp="1582687539208">Numerous Pony-themed updates</version>
+        <version number="12.70.3" timestamp="1582473789900">Updates for Caulifla, Meia, Jura, Revy, Dust, Tharja, Megumin, Erufuda, and Tomoko.</version>
+        <version number="12.70.2" timestamp="1581890340098">Dialogue updates for Jessie, Cynthia, and Yuelia.</version>
+        <version number="12.70.1" timestamp="1581828019611">Minor dialogue updates for HK416 and Revy.</version>
+        <version number="12.70.0" timestamp="1581792065000">Adds Amy to the main roster! Updates to Streaming-chan, Meia, Jura, Maki, Mei, and Erufuda.</version>
+        <version number="12.69.7" timestamp="1581552790498">Updates to Amy, Brock, and Saki.</version>
+        <version number="12.69.6" timestamp="1581405137746">Joey model update; dialogue updates for Chazz, Meia, Arash, Jura, and Joey.</version>
+        <version number="12.69.5" timestamp="1581232253405">Updates for Amy, Gaige, Maki, Arash, Yuelia, Megumin, Remilia (one line!), Saki Y, And Revy.</version>
+        <version number="12.69.4" timestamp="1581028940568">Dialogue updates for Estelle, Jura, Revy, Aella, Miko, Saki N, and Arash. Festival Aella art update (offline).</version>
+        <version number="12.69.3" timestamp="1580933644449">Dialogue updates for Arash, Meia, Caulifla, Erufuda; dialogue updates for all four pony girls along with a new ending group pose.</version>
+        <version number="12.69.2" timestamp="1580684741577">Dialogue updates for Rainbow Dash and Arash, and a fix for Lucina's epilogue.</version>
+        <version number="12.69.1" timestamp="1580602365259">Updates to Revy, Arash, Amy, Caulifla, and Tomoko.</version>
+        <version number="12.69.0" timestamp="1580510053867">Returns HK416 to the Testing Tables. Updates to Guzma, Rainbow Dash, Meia's Cupid costume, Arash, and Spooky.</version>
+        <version number="12.68.1" timestamp="1580364659217">Dialogue updates for Arash and HK416.</version>
+        <version number="12.68.0" timestamp="1580337034606">Adds Arash and Merlin to the Testing Tables. Updates to Pit, Meia, Jura, Yuelia, and Lucina (in particular her epilogue).</version>
+        <version number="12.67.1" timestamp="1580081199544">Updates to Revy, Megumin, and Gaige.</version>
+        <version number="12.67.0" timestamp="1580072392809">Adds new Shantae to the Testing Tables! (Old Shantae renamed shantae_classic.) Moves Chihiro to the incomplete roster and Kyoko offline. Updates to Pit, Nami, Dust, and Elesa.</version>
+        <version number="12.66.15" timestamp="1579993263776">Updates to Saki and Jessie, as well as some minor bugfixes.</version>
+        <version number="12.66.14" timestamp="1579819682160">Small updates to Caulifla and Weiss, plus a new alternate costume for Weiss in the offline version.</version>
+        <version number="12.66.13" timestamp="1579726686036">Updates to Meia, Revy, Moon, and Nami.</version>
+        <version number="12.66.12" timestamp="1579639417451">Updates to Revy, Meia (tiny one), and Megumin.</version>
+        <version number="12.66.11" timestamp="1579551433130">Updates to Meia, Gaige, and a minor one to Panty.</version>
+        <version number="12.66.10" timestamp="1579464122520">Updates to Panty and Saki Yoshida.</version>
+        <version number="12.66.9" timestamp="1579443867820">Updates to Gaige, Jessie, Yuelia (talking to Gaige), and Amy.</version>
+        <version number="12.66.8" timestamp="1579288116610">Updates to Cynthia and Tomoko, as well as tag updates to many characters.</version>
+        <version number="12.66.7" timestamp="1579235773642">Updates to Akko, Amy, Futaba, Mulan, Nami, Natsuki, Sakura, Streaming-chan, Tomoko, Yuelia</version>
+        <version number="12.66.6" timestamp="1579209847673">Updates to Megumin, Cynthia, and Gaige.</version>
+        <version number="12.66.5" timestamp="1579161329513">Updates to Revy and Yuelia.</version>
+        <version number="12.66.4" timestamp="1579114208108">Updates to Dust and Panty.</version>
+        <version number="12.66.3" timestamp="1579074443735">Updates to Erufuda, Megumin, and Saki Yoshida.</version>
+        <version number="12.66.2" timestamp="1579042977500">Updates to Meia and Kazuma.</version>
+        <version number="12.66.1" timestamp="1578982451765">Updates for Panty, Tomoko, and Megumin.</version>
+        <version number="12.66.0" timestamp="1578934094300">Adds Gaige to Testing! Updates to Meia, Panty, Tomoko, Chazz, Sakura, Amy, Jessie, Yuelia, Mei, Maki, and Megumin.</version>
+        <version number="12.65.4" timestamp="1578631792104">Dialogue updates for Brock, Rin, and Saki. Also adds a collectible, new dialogue, and new art for Maki.</version>
+        <version number="12.65.3" timestamp="1578579110576">Updates for Mei, Maki, Meia, Aella, Yuelia, Emi.</version>
+        <version number="12.65.2" timestamp="1578459142377">Updates to Yuelia, Jura, Megumin, Tomoko</version>
+        <version number="12.65.1" timestamp="1578411484277">Dialogue updates for Rainbow Dash, Aella, Dust, Miko, both Sakis, and Maki.</version>
+        <version number="12.65.0" timestamp="1578365284000">Adds Maki Nishikino to Testing!</version>
+        <version number="12.64.9" timestamp="1578345414823">Dialogue updates for Tomoko.</version>
+        <version number="12.64.8" timestamp="1578248357636">Dialogue updates for Yuelia, Tharja, Revy, Meia, and Cynthia, plus art updates for Yuelia, Estelle, and Meia.</version>
+        <version number="12.64.7" timestamp="1578176122525">Dialogue updates and pose fixes for Weiss.</version>
+        <version number="12.64.6" timestamp="1578133674161">Dialogue updates for Misato, Ini, Rin, and Guzma, plus art updates for Cupid Meia, Megumin, and Rin. Also adds a version of Ini's epilogue for female players.</version>
+        <version number="12.64.5" timestamp="1578081314147">Dialogue updates for Rainbow Dash and Megumin, plus art updates for Hatsume.</version>
+        <version number="12.64.4" timestamp="1577979543438">Updates for Megumin, Saki Nikaidou, Meia, Rainbow Dash, and Mary.</version>
+        <version number="12.64.3" timestamp="1577897741807">Updates to Mary, Meia, Rainbow Dash, Rin, Tomoko</version>
+        <version number="12.64.2" timestamp="1577785550000">Dialogue updates for Ribbon Girl, Rainbow Dash, Dust, Kazuma, Zizou, and Jessie.</version>
+        <version number="12.64.1" timestamp="1577726721486">Updates for three characters on the Testing Tables: Cynthia, Tomoko, and Mary</version>
+        <version number="12.64.0" timestamp="1577678233798">Adds an epilogue for Ini!</version>
+        <version number="12.63.6" timestamp="1577676920227">Dialogue updates for Yuelia.</version>
+        <version number="12.63.5" timestamp="1577668269916">Dialogue updates for Mary and Panty, plus art updates for Chazz.</version>
+        <version number="12.63.4" timestamp="1577585784902">Dialogue updates for Tomoko, Lucina, and Guzma.</version>
+        <version number="12.63.3" timestamp="1577522346326">Updates for Jessie, Meia, and Lucina.</version>
+        <version number="12.63.2" timestamp="1577514013588">Updates to Kazuma, Mary, Meia, Megumin, Nami, Yuelia, Zizou</version>
+        <version number="12.63.1" timestamp="1577418152006">Updates for Nami, Meia, Yuelia, Megumin, Cynthia, Mary, Dust, and Revy.</version>
+        <version number="12.63.0" timestamp="1577370868128">Adds Mary to the Testing Tables!</version>
+        <version number="12.62.4" timestamp="1577242747412">Updates for Jura, Meia, Yuelia, Tomoko, and Megumin.</version>
+        <version number="12.62.3" timestamp="1576696082267">Adds Chazz and Panty to the main roster!</version>
+        <version number="12.62.2" timestamp="1576654266044">Dialogue updates for Haru.</version>
+        <version number="12.62.1" timestamp="1576653294605">Dialogue bugfixes for Kyoko and Guzma.</version>
+        <version number="12.62.0" timestamp="1576635357799">Major art update for Saki Y. plus dialogue updates for Megumin, Tomoko, and Guzma.</version>
+        <version number="12.61.1" timestamp="1576562940827">Dialogue updates for Yuelia and Panty.</version>
+        <version number="12.61.0" timestamp="1576538664178">Nightmare Before Christmas Event! New Halloween and Christmas skins for Misato, L'Arachel, Tharja, Emi, and Estelle.</version>
+        <version number="12.60.6" timestamp="1576479948418">Dialogue updates and fixes for Saki and Aella, art fixes for Guzma, and misc. fixes for Panty.</version>
+        <version number="12.60.5" timestamp="1576444600882">Adds an event reskin for Misato and dialogue updates for Tomoko.</version>
+        <version number="12.60.4" timestamp="1576302856185">Dialogue updates and fixes for Rin, Kyoko, Tomoko, and Dust, plus additional art fixes for Rin.</version>
+        <version number="12.60.3" timestamp="1576208119666">Dialogue updates for Revy, Chazz, Megumin, and Tomoko, plus art additions for Revy.</version>
+        <version number="12.60.2" timestamp="1576124706761">Adds a reskin for Tharja, along with a few misc. additions.</version>
+        <version number="12.60.1" timestamp="1576124307076">Fixes Nami's reskin and adds a Collectible for her.</version>
+        <version number="12.60.0" timestamp="1576123208347">Moves Kyoko to Testing, dialogue updates for Tomoko and Guzma.</version>
+        <version number="12.59.5" timestamp="1576035281301">Dialogue updates for Dust, Spooky, Saki, Jessie, Nami, and Megumin.</version>
+        <version number="12.59.4" timestamp="1575999350533">Adds Nami and Elesa to the main roster!</version>
+        <version number="12.59.3" timestamp="1575901589478">Dialogue updates for Guzma.</version>
+        <version number="12.59.2" timestamp="1575879241951">Updates for Haru, N, Rainbow Dash, Rarity, Twilight, Yuelia</version>
+        <version number="12.59.1" timestamp="1575839151000">Dialogue updates for Dust, Tomoko, and Spooky.</version>
+        <version number="12.59.0" timestamp="1575710666770">Someone left a window open. A few bugs may have gotten in.</version>
+        <version number="12.58.4" timestamp="1575572755597">Updates for  Cynthia, Chazz, Dust, Joey, Meia, Ribbon Girl, Rin, Spooky</version>
+        <version number="12.58.3" timestamp="1575264476129">Art fixes and updates for Guzma.</version>
+        <version number="12.58.2" timestamp="1575257097902">Dialogue updates for Nami, Chazz, Meia, Jura, Weiss, and Ini.</version>
+        <version number="12.58.1" timestamp="1575116980972">Dialogue updates for Elesa, Meia, Revy, and Dust.</version>
+        <version number="12.58.0" timestamp="1575100709724">Adds Mei Hatsume to testing.</version>
+        <version number="12.57.7" timestamp="1575083930123">Dialogue updates for Jessie.</version>
+        <version number="12.57.6" timestamp="1574986863777">Image and dialogue works for Spooky.</version>
+        <version number="12.57.5" timestamp="1574949142134">Dialogue updates for Aella, Beatrix, Joey, and Ribbon Girl.</version>
+        <version number="12.57.4" timestamp="1574868478365">Updates to Guzma, Lucina, Chazz, Kazuma, Dust, and Meia.</version>
+        <version number="12.57.3" timestamp="1574739310860">Adds an epilogue for Nami and an alternate skin for Elesa. Dialogue updates for Panty.</version>
+        <version number="12.57.2" timestamp="1574716615601">Adds "The Original" outfit to Elesa.</version>
+        <version number="12.57.1" timestamp="1574693408314">Updates for Dust, Chazz, Jessie, and Meia</version>
+        <version number="12.57.0" timestamp="1574559642163">Adds Ribbon Girl to the main roster!</version>
+        <version number="12.56.4" timestamp="1574495795275">Updates for Dust, Guzma, Jura, Sakura, and Streaming-chan</version>
+        <version number="12.56.3" timestamp="1574420113180">Dialogue updates for Meia, Jessie, Guzma, Weiss, Chazz, Jura, Cynthia, and Misato.</version>
+        <version number="12.56.2" timestamp="1574295810766">Added dialogue updates, art updates, and a new Collectible for Guzma.</version>
+        <version number="12.56.1" timestamp="1574284410505">Kazuma and N have entered the main game!</version>
+        <version number="12.56.0" timestamp="1574274962964">Weiss Schnee has joined the main roster after a major rework!</version>
+        <version number="12.55.1" timestamp="1574168061210">Dialogue updates for Kazuma and N.</version>
+        <version number="12.55.0" timestamp="1574165212314">Starfire has joined the main roster!</version>
+        <version number="12.54.5" timestamp="1574127757011">Dialogue updates and fixes for Megumin, Weiss, and Starfire.</version>
+        <version number="12.54.4" timestamp="1574084497194">Dialogue updates for Jessie, Kazuma, Rin, and Chazz. Additional art updates for Kazuma and Chazz.</version>
+        <version number="12.54.3" timestamp="1574046058009">Dialogue updates for Meia and Jura. Art updates for Ribbon Girl and Chazz.</version>
+        <version number="12.54.2" timestamp="1574027461410">Dialogue updates for Cynthia.</version>
+        <version number="12.54.1" timestamp="1574026935544">Dialogue updates for Kazuma, Meia, Jessie, Dust, Estelle, and Weiss. Art updates for Kazuma and Meia.</version>
+        <version number="12.54.0" timestamp="1573955679850">Adds Megumin to the main roster!</version>
+        <version number="12.53.6" timestamp="1573919592624">Dialogue updates for Chazz and Wonder Woman. Adds the Armory background.</version>
+        <version number="12.53.5" timestamp="1573837137375">Dialogue updates for Megumin, Erufuda, Jessie, Dust, Cynthia, and Chazz. Additional art updates for Dust.</version>
+        <version number="12.53.4" timestamp="1573761935160">Dialogue updates to Megumin.</version>
+        <version number="12.53.3" timestamp="1573739791647">Dialogue updates for Misato, Ribbon Girl, Megumin, Meia, and Dust.</version>
+        <version number="12.53.2" timestamp="1573667320083">Updates to Kazuma, Chazz, and Cynthia.</version>
+        <version number="12.53.1" timestamp="1573625764209">Dialogue updates for Guzma, Weiss Schnee, Dust, Estelle, Miko, Saki Nikaidou, Jura, Meia, and Rainbow Dash. Image adjustments for Tharja and Meia.</version>
+        <version number="12.53.0" timestamp="1573577759807">Princess Estelle joins the main roster!</version>
+        <version number="12.52.9" timestamp="1573559470677">Dialogue updates/fixes for Weiss, Megumin, Guzma, Meia, Estelle, Rainbow Dash, and Jessie. Art updates for Weiss, Guzma, Meia, and Rainbow Dash.</version>
+        <version number="12.52.8" timestamp="1573483875666">Dialogue updates for Caulifla, Tharja, Misty, Meia, Dust, N, and Kazuma. Image update for Chazz. Butt poses for Tharja and Meia.</version>
+        <version number="12.52.7" timestamp="1573411361767">Updates to Elesa and Pit.</version>
+        <version number="12.52.6" timestamp="1573396878829">Dialogue updates for Meia, Jessie, Kazuma, and Rainbow Dash. Pre-sponsorship updates for N.</version>
+        <version number="12.52.5" timestamp="1573364218892">Dialogue updates and bugfixes for Twilight, Pinkie Pie, Misty, Rarity, and Dust.</version>
+        <version number="12.52.4" timestamp="1573353288780">Bugfixes for Rainbow Dash, and a pre-sponsorship update for Estelle.</version>
+        <version number="12.52.3" timestamp="1573336880474">Dialogue updates and fixes for Megumin and Weiss.</version>
+        <version number="12.52.2" timestamp="1573328974036">Dialogue updates and fixes for Panty and Megumin.</version>
+        <version number="12.52.1" timestamp="1573292972359">Dialogue updates for Chazz, Haru, and Ryuji. Adds a collectible to Haru.</version>
+        <version number="12.52.0" timestamp="1573283913999">Adds Rainbow Dash to Testing!</version>
+        <version number="12.51.17" timestamp="1573282645826">Updates to Starfire, Meia, Pinkie, Rarity, and Weiss</version>
+        <version number="12.51.16" timestamp="1573250233994">Dialogue fixes for Weiss and updates for Jessie.</version>
+        <version number="12.51.15" timestamp="1573206837079">Updates to Guzma, Dust, Chazz, and Megumin.</version>
+        <version number="12.51.14" timestamp="1573052461709">Updates to Dust, Jessie, Guzma, Cynthia, Panty, Weiss, Starfire, and Chazz.</version>
+        <version number="12.51.13" timestamp="1572925663514">Art updates for Weiss and Revy, and dialogue updates for Jura and Meia.</version>
+        <version number="12.51.12" timestamp="1572886197894">Dialogue updates for Guzma and Kazuma.</version>
+        <version number="12.51.11" timestamp="1572814159230">Art updates for Weiss, and bugfixes for Kazuma and Sola.</version>
+        <version number="12.51.10" timestamp="1572795098820">Added new selfies for Mahiru.</version>
+        <version number="12.51.9" timestamp="1572728125442">Dialogue updates for Megumin.</version>
+        <version number="12.51.8" timestamp="1572595330168">Dialogue updates for Elesa, Kazuma, Chazz, and Dust.</version>
+        <version number="12.51.7" timestamp="1572433650726">Updates to Dust and Megumin.</version>
+        <version number="12.51.6" timestamp="1572375932386">Many Masquerade dialogue updates</version>
+        <version number="12.51.5" timestamp="1572301457202">Dialogue updates and bugfixes for Megumin and Caulifla.</version>
+        <version number="12.51.4" timestamp="1572279262142">Dialogue updates for Chazz and Weiss Schnee.</version>
+        <version number="12.51.3" timestamp="1572235701874">Art and dialogue updates for Elesa.</version>
+        <version number="12.51.2" timestamp="1572232935699">Dialogue bugfixes for Megumin.</version>
+        <version number="12.51.1" timestamp="1572227288806">Dialogue bugfixes for Guzma.</version>
+        <version number="12.51.0" timestamp="1572214001714">Returns Aella to the main roster after being Quick-Passed, and updates Megumin's dialogue.</version>
+        <version number="12.50.5" timestamp="1572206037850">Updates to Jessie, Guzma, Cynthia, and Mae.</version>
+        <version number="12.50.4" timestamp="1572152823945">Dialogue updates and bugfixes for Emi.</version>
+        <version number="12.50.3" timestamp="1572143177954">Dialogue updates for Megumin.</version>
+        <version number="12.50.2" timestamp="1572130292562">Dialogue updates for Cynthia and Megumin, and additional art updates for Aella.</version>
+        <version number="12.50.1" timestamp="1572120175003">Updates to Pit, Palutena, and L'Arachel.</version>
+        <version number="12.50.0" timestamp="1572115724740">Significant art updates for Aella, plus dialogue updates and bugfixes for Chazz, Kazuma, Dust, and Megumin.</version>
+        <version number="12.49.23" timestamp="1572090776545">Pose updates to Lucina.</version>
+        <version number="12.49.22" timestamp="1572057501463">Many contest updates!</version>
+        <version number="12.49.21" timestamp="1572017365443">Dialogue updates for Cynthia and Chazz.</version>
+        <version number="12.49.20" timestamp="1571922289099">Dialogue updates for N and Jessie.</version>
+        <version number="12.49.19" timestamp="1571905358233">Updates to Cynthia, Kazuma, and Dust.</version>
+        <version number="12.49.18" timestamp="1571873036519">Dialogue updates for Weiss, Misato, Guzma, Chazz, and Rin; bugfixes for Guzma, Chazz, Rin, and Elizabeth.</version>
+        <version number="12.49.17" timestamp="1571747283840">Dialogue updates for Misato, Jessie, Chazz, Guzma, and Dust.</version>
+        <version number="12.49.16" timestamp="1571714565085">Updates for Chazz, Ini, and Elesa.</version>
+        <version number="12.49.15" timestamp="1571708632779">Dialogue updates for Chazz and Starfire.</version>
+        <version number="12.49.14" timestamp="1571701446553">Dialogue updates for Cynthia and Chihiro, plus tag fixes for Ribbon Girl.</version>
+        <version number="12.49.13" timestamp="1571686102200">Adds Sola and Rarity to the main roster!</version>
+        <version number="12.49.12" timestamp="1571665783959">Dialogue updates for Cynthia.</version>
+        <version number="12.49.11" timestamp="1571629419026">Dialogue updates for Dust and Meia.</version>
+        <version number="12.49.10" timestamp="1571590223328">Bugfixes for Caulifla and Megumin.</version>
+        <version number="12.49.9" timestamp="1571585346440">Updates to Cynthia, Kazuma, Mae, Miko, Saki, and Jessie.</version>
+        <version number="12.49.8" timestamp="1571548627231">Updates for: Cynthia, Dust, Megumin, and Chihiro.</version>
+        <version number="12.49.7" timestamp="1571392207405">Dialogue updates for Rarity and Pinkie Pie.</version>
+        <version number="12.49.6" timestamp="1571370257907">Dialogue updates for Misty.</version>
+        <version number="12.49.5" timestamp="1571346128909">Fixes image scaling issues with Megumin and Elesa. Also fixes dialogue bugs with Cynthia.</version>
+        <version number="12.49.4" timestamp="1571280938760">Adds Wonder Woman to test!</version>
+        <version number="12.49.3" timestamp="1571279548312">Adds Cynthia to test!</version>
+        <version number="12.49.2" timestamp="1571266593753">Mavis Dracula joins the main roster!</version>
+        <version number="12.49.1" timestamp="1571257640158">Many small merge requests.</version>
+        <version number="12.49.0" timestamp="1571214237442">Masquerade: The Testing Phase! Chazz, Elesa, Guzma, Kazuma, Megumin, Panty, and Starfire have been added to the Testing Tables!</version>
+        <version number="12.48.8" timestamp="1571138646987">Reworks Ribbon Girl's art, and applies bugfixes for Rin.</version>
+        <version number="12.48.7" timestamp="1571100268126">Additional bugfixes for Dust.</version>
+        <version number="12.48.6" timestamp="1571099029127">Many, many updates for Revy, Jessie, N, Caulifla, Weiss, Saki (ZLS), Miko, Estelle, Lotte, Meia, and Erufuda.</version>
+        <version number="12.48.5" timestamp="1571024687499">Art updates for Rarity, and dialogue updates for Twilight.</version>
+        <version number="12.48.4" timestamp="1571024466644">Pre-sponsorship update for Rin.</version>
+        <version number="12.48.3" timestamp="1570998139615">Dialogue bugfixes and updates for Dust.</version>
+        <version number="12.48.2" timestamp="1570943920350">Art updates for Ribbon Girl, Rarity, and Meia (Cupid costume). Dialogue updates and bugfixes for Misty, Mae, N, and Jessie. Tagging updates for Dust.</version>
+        <version number="12.48.1" timestamp="1570869245149">Adds Dust to the Testing Tables.</version>
+        <version number="12.48.0" timestamp="1570852904826">Collectibles feature now in open beta!</version>
+        <version number="12.47.1" timestamp="1570801767375">Dialogue updates for Meia, Rarity, N, Ryuji, and Mae.</version>
+        <version number="12.47.0" timestamp="1570689680664">Adds N Harmonia (Pokemon Black/White) to the Testing Tables.</version>
+        <version number="12.46.3" timestamp="1570677509437">Dialogue updates for Revy.</version>
+        <version number="12.46.2" timestamp="1570675266368">Dialogue updates for Meia and Jura.</version>
+        <version number="12.46.1" timestamp="1570652954440">Dialogue updates for Nami and Jessie.</version>
+        <version number="12.46.0" timestamp="1570648480876">Croix joins the main roster!</version>
+        <version number="12.45.4" timestamp="1570478785921">Updates to Croix.</version>
+        <version number="12.45.3" timestamp="1570444523093">Dialogue updates to Weiss Schnee and Jessie.</version>
+        <version number="12.45.2" timestamp="1570336565193">Dialogue updates for Jessie and Caulifla, bug fixes and posing changes for Rarity, and finally epilogue animation improvements for Meia.</version>
+        <version number="12.45.1" timestamp="1570153991740">Updates to Syrenne, Beatrix, Croix, and Caulifla.</version>
+        <version number="12.45.0" timestamp="1570112977017">Jessie joins the main roster!</version>
+        <version number="12.44.6" timestamp="1570042171041">Adds a new joint epilogue for playing Chun-Li, Juri, and Cammy together.</version>
+        <version number="12.44.5" timestamp="1569958229313">Significant dialogue updates for Beatrix, plus minor tweaks and fixes for Jessie and Revy.</version>
+        <version number="12.44.4" timestamp="1569899553785">Dialogue updates and bugfixes for Rarity and Jessie.</version>
+        <version number="12.44.3" timestamp="1569886289000">Dialogue updates for Revy, Sola, and Zizou.</version>
+        <version number="12.44.2" timestamp="1569767057102">Dialogue updates for Revy and Jessie.</version>
+        <version number="12.44.1" timestamp="1569729275855">Dialogue updates for Meia and art updates for Mavis.</version>
+        <version number="12.44.0" timestamp="1569694271314">Syrenne joins the main roster!</version>
+        <version number="12.43.13" timestamp="1569680532794">Updates to Sola and Haru.</version>
+        <version number="12.43.12" timestamp="1569668350109">Dialogue updates to Weiss Schnee and Zone-tan.</version>
+        <version number="12.43.11" timestamp="1569562930055">Dialogue updates for Meia and Caulifla.</version>
+        <version number="12.43.10" timestamp="1569531461891">Adds an epilogue to Tharja.</version>
+        <version number="12.43.9" timestamp="1569526547960">Dialogue updates for Jessie, Caulifla, and Weiss (plus minor art updates for Weiss)</version>
+        <version number="12.43.8" timestamp="1569402469889">Updates to Lucina's dialogue and epilogue.</version>
+        <version number="12.43.7" timestamp="1569356376350">Updates for Lotte, Croix, Weiss, and Rarity_eg.</version>
+        <version number="12.43.6" timestamp="1569320160852">Updates for Syrenne, Caulifla, and Jessie.</version>
+        <version number="12.43.5" timestamp="1569176590265">Bugfixes for Rin.</version>
+        <version number="12.43.4" timestamp="1569167538926">Art updates for Jessie and Sola, along with dialogue updates for Caulifla and Rin. Also fixes a missing sprite for Estelle.</version>
+        <version number="12.43.3" timestamp="1569104563272">Dialogue and art updates for Estelle.</version>
+        <version number="12.43.2" timestamp="1569094129308">Dialogue bugfixes and updates for Emi, Jessie, Jura, Meia, and Revy.</version>
+        <version number="12.43.1" timestamp="1569000840000">Dialogue updates for Sola, Weiss, and Jessie, and new pre-set tables featuring Tharja and Emi.</version>
+        <version number="12.43.0" timestamp="1568811240000">Adds Emi to the main roster!</version>
+        <version number="12.42.8" timestamp="1568666188157">Updates to Weiss.</version>
+        <version number="12.42.7" timestamp="1568600145513">Updates to Saki_ZLS and Sola.</version>
+        <version number="12.42.6" timestamp="1568599902681">Updates to Pit.</version>
+        <version number="12.42.5" timestamp="1568592635648">Updates to Rarity.</version>
+        <version number="12.42.4" timestamp="1568504962477">Dialogue bugfixes for Saki and Miko.</version>
+        <version number="12.42.3" timestamp="1568504098705">Dialogue updates for Misty.</version>
+        <version number="12.42.2" timestamp="1568479174050">Updates to Jessie, Erufuda, and Emi.</version>
+        <version number="12.42.1" timestamp="1568421584878">Updates for Saki, Miko, and Emi.</version>
+        <version number="12.42.0" timestamp="1568413556756">Misty (HGSS) joins the game!</version>
+        <version number="12.41.4" timestamp="1568382252410">Dialogue updates for Sayaka.</version>
+        <version number="12.41.3" timestamp="1568339445748">Dialogue updates for Syrenne and Rarity.</version>
+        <version number="12.41.2" timestamp="1568324895697">Updates to Rarity.</version>
+        <version number="12.41.1" timestamp="1568297613290">Updates to Sola and Jessie.</version>
+        <version number="12.41.0" timestamp="1568266935328">Tharja joins the game!</version>
+        <version number="12.40.21" timestamp="1568264482355">Dialogue updates for Rarity.</version>
+        <version number="12.40.20" timestamp="1568254670557">Bugfixes for Revy and dialogue updates for Mythra.</version>
+        <version number="12.40.19" timestamp="1568238671773">Fixes and dialogue updates for Tharja.</version>
+        <version number="12.40.18" timestamp="1568237564819">Dialogue updates for Weiss.</version>
+        <version number="12.40.17" timestamp="1568231623138">Updates to Pit.</version>
+        <version number="12.40.16" timestamp="1568230980440">Emi Pre-Sponsorship Update</version>
+        <version number="12.40.15" timestamp="1568207293218">Dialogue updates for Rarity EG and Jessie.</version>
+        <version number="12.40.14" timestamp="1568156097883">Dialogue updates and bugfixes for Erufuda and Tharja.</version>
+        <version number="12.40.13" timestamp="1568150465620">Adds Misty(HGSS)'s "Nostalgia" outfit to the offline version of the game.</version>
+        <version number="12.40.12" timestamp="1568115012926">Dialogue updates to Tharja, Jessie, Meia, Ribbon Girl, and Jessie.</version>
+        <version number="12.40.11" timestamp="1568071537506">Additional art updates for Syrenne.</version>
+        <version number="12.40.10" timestamp="1568039879817">Updates for Weiss, Florina, and Jessie.</version>
+        <version number="12.40.9" timestamp="1568039598207">Art updates for Syrenne.</version>
+        <version number="12.40.8" timestamp="1568038350447">Dialogue and posing updates for Tharja.</version>
+        <version number="12.40.7" timestamp="1568036526485">Moves Sola to the testing tables after a major update.</version>
+        <version number="12.40.6" timestamp="1567965778937">Dialogue fixes and updates for Tharja, Mavis, Jessie, Weiss, and Caulifla.</version>
+        <version number="12.40.5" timestamp="1567916984625">Dialogue updates for Miko, Saki ZLS, Jura, Meia, and Revy.</version>
+        <version number="12.40.4" timestamp="1567901633686">Dialogue updates for Nami.</version>
+        <version number="12.40.3" timestamp="1567845709514">Updates to Misty_hgss, Ribbon Girl, and Aella.</version>
+        <version number="12.40.2" timestamp="1567735398830">Dialogue updates and fixes for Mythra.</version>
+        <version number="12.40.1" timestamp="1567717856730">Dialogue updates for Weiss and bugfixes for Mythra.</version>
+        <version number="12.40.0" timestamp="1567704092092">Adds Mythra to the testing tables! Improved the pre-set tables. Updates for Ini, Syrenne, and Tharja.</version>
+        <version number="12.39.17" timestamp="1567618610995">Updates to Buffy, Jessie</version>
+        <version number="12.39.16" timestamp="1567603514206">Dialogue updates and bugfixes for Weiss.</version>
+        <version number="12.39.15" timestamp="1567573954498">Merge requests for Tharja, Weiss, and Nami</version>
+        <version number="12.39.14" timestamp="1567542004457">Targets to Tharja, adds an easy access testing table.</version>
+        <version number="12.39.13" timestamp="1567474319937">Dialogue updates for Tharja.</version>
+        <version number="12.39.12" timestamp="1567468183449">Bugfixes for Rarity (EG).</version>
+        <version number="12.39.11" timestamp="1567451496833">Bugfixes for Jura.</version>
+        <version number="12.39.10" timestamp="1567399214281">Dialogue updates for Jura, Revy, and Jessie.</version>
+        <version number="12.39.9" timestamp="1567359394129">Dialogue updates for Jessie.</version>
+        <version number="12.39.8" timestamp="1567312575907">Dialogue updates for Meia, Jura, and Revy.</version>
+        <version number="12.39.7" timestamp="1567312483121">Dialogue updates for Mavis.</version>
+        <version number="12.39.6" timestamp="1567306657958">Dialogue updates for Rin.</version>
+        <version number="12.39.5" timestamp="1567289703148">The Great Roster Re-Sort 8: The online character roster has now been rearranged.</version>
+        <version number="12.39.4" timestamp="1567281489194">Updates for Tharja and Weiss.</version>
+        <version number="12.39.3" timestamp="1567264627853">Bugfixes for Tharja.</version>
+        <version number="12.39.2" timestamp="1567175054462">Dialogue update to Zone-tan.</version>
+        <version number="12.39.1" timestamp="1567129412160">Updates for Croix, Lotte, Rarity, and Futaba, Sei, Mulan, Natsuki, Sakura, Streaming-chan</version>
+        <version number="12.39.0" timestamp="1567107045018">Adds Weiss Schnee to the testing tables.</version>
+        <version number="12.38.2" timestamp="1567100916385">Updates to Tharja, Mae, Misty, and Rarity.</version>
+        <version number="12.38.1" timestamp="1567025716495">Fixed reported issues with Monika/Sayori joint forfeit.</version>
+        <version number="12.38.0" timestamp="1567006478790">Adds Rarity to the testing tables.</version>
+        <version number="12.37.22" timestamp="1566996924640">Dialogue updates for Zone-tan.</version>
+        <version number="12.37.21" timestamp="1566968385009">Emi and Misty HGSS updates.</version>
+        <version number="12.37.20" timestamp="1566959657034">Dialogue updates for Estelle.</version>
+        <version number="12.37.19" timestamp="1566957826795">Dialogue updates for Tharja.</version>
+        <version number="12.37.18" timestamp="1566857702955">Updates to Pit.</version>
+        <version number="12.37.17" timestamp="1566854384863">Posing updates for Monika.</version>
+        <version number="12.37.16" timestamp="1566831070276">Dialogue updates for Jessie and Tharja.</version>
+        <version number="12.37.15" timestamp="1566793554302">Dialogue updates for Monika.</version>
+        <version number="12.37.14" timestamp="1566757064252">Dialogue updates for Ribbon Girl and Revy.</version>
+        <version number="12.37.13" timestamp="1566691323211">Dialogue updates and epilogue fixes for Revy.</version>
+        <version number="12.37.12" timestamp="1566664241534">Dialogue updates for Tharja, Misty (HGSS), and Nagisa.</version>
+        <version number="12.37.11" timestamp="1566574587363">Updates to Jessie.</version>
+        <version number="12.37.10" timestamp="1566506841553">Dialogue updates for Jessie.</version>
+        <version number="12.37.9" timestamp="1566445549159">Posing updates for Misty (HGSS).</version>
+        <version number="12.37.8" timestamp="1566442049503">Dialogue updates for Nami.</version>
+        <version number="12.37.7" timestamp="1566441750092">Dialogue updates for Ribbon Girl and Revy.</version>
+        <version number="12.37.6" timestamp="1566429907946">Additional bugfixes for Hanako.</version>
+        <version number="12.37.5" timestamp="1566428749136">Dialogue updates for Hanako and Misty (HGSS).</version>
+        <version number="12.37.4" timestamp="1566391926478">Dialogue updates for Zone-tan and Nugi-chan.</version>
+        <version number="12.37.3" timestamp="1566364739762">Dialogue updates for Tharja and Chihiro.</version>
+        <version number="12.37.2" timestamp="1566347460000">Dialogue updates for Meia and Jura.</version>
+        <version number="12.37.1" timestamp="1566310313563">Dialogue updates for Jessie, Revy, and Sayaka.</version>
+        <version number="12.37.0" timestamp="1566269176593">Adds Jessie to testing tables.</version>
+        <version number="12.36.0" timestamp="1566244009015">Adds the Alley and Office backgrounds. Replaces the Library background. Updates for Meia, Jura, Zone-tan, and Nugi-chan.</version>
+        <version number="12.35.8" timestamp="1566167571980">Bugfixes for Tharja.</version>
+        <version number="12.35.7" timestamp="1566119691437">Ends the 2019 Summer Event.</version>
+        <version number="12.35.6" timestamp="1566115700196">Dialogue updates for Meia, Misty (hgss), and Saki (zls).</version>
+        <version number="12.35.5" timestamp="1566010040840">Dialogue updates for Jotaro, Jolyne, and Florina.</version>
+        <version number="12.35.4" timestamp="1565980867947">Mulan re-joins the main roster.</version>
+        <version number="12.35.3" timestamp="1565963314362">Dialogue updates for Misaka.</version>
+        <version number="12.35.2" timestamp="1565928380814">Dialogue updates for Revy and more typo fixes for Jura, along with bug fixes and art updates for Nami.</version>
+        <version number="12.35.1" timestamp="1565918487399">Dialogue updates for Meia, plus dialogue typo corrections for Clover, Dark Magician Girl, Evie, Mercy, Morrigan, Elizabeth, Jura, Launch, and Vriska.</version>
+        <version number="12.35.0" timestamp="1565917216762">Major art updates for Sola and dialogue updates for Erufuda.</version>
+        <version number="12.34.14" timestamp="1565895298760">Palutena and Zone-tan re-join the main roster.</version>
+        <version number="12.34.13" timestamp="1565737868832">Dialogue updates for Meia, Jura, and Revy.</version>
+        <version number="12.34.12" timestamp="1565678364350">Dialogue updates for Misty (HGSS).</version>
+        <version number="12.34.11" timestamp="1565668282605">Dialogue updates for Syrenne, Meia, and Jura.</version>
+        <version number="12.34.10" timestamp="1565659073098">Art updates to Palutena.</version>
+        <version number="12.34.9" timestamp="1565656819165">Dialogue updates for Nami.</version>
+        <version number="12.34.8" timestamp="1565643255731">Dialogue updates for Miko.</version>
+        <version number="12.34.7" timestamp="1565640023521">Caulifla joins the main roster.</version>
+        <version number="12.34.6" timestamp="1565639142703">Dialogue updates for Juri.</version>
+        <version number="12.34.5" timestamp="1565621000445">Dialogue updates and fixes for Syrenne, Meia, and Nugi-chan.</version>
+        <version number="12.34.4" timestamp="1565618560546">Dialogue updates for Zone-tan.</version>
+        <version number="12.34.3" timestamp="1565580297359">Dialogue updates for Meia and Revy.</version>
+        <version number="12.34.2" timestamp="1565575783540">Dialogue updates for Ini and Syrenne.</version>
+        <version number="12.34.1" timestamp="1565481230304">Updates for Catria, Meia, and Nami.</version>
+        <version number="12.34.0" timestamp="1565452146730">Restore Ribbon Girl to the Testing Tables.</version>
+        <version number="12.33.21" timestamp="1565434615872">Dialogue updates for Zone-tan.</version>
+        <version number="12.33.20" timestamp="1565412706081">Updates to Misty (HGSS).</version>
+        <version number="12.33.19" timestamp="1565395833836">Animation bug fixes for Rin.</version>
+        <version number="12.33.18" timestamp="1565389747449">Dialogue updates for Pit.</version>
+        <version number="12.33.17" timestamp="1565389535395">Dialogue updates and new poses for Nami.</version>
+        <version number="12.33.16" timestamp="1565384330108">Dialogue updates for Caulifla.</version>
+        <version number="12.33.15" timestamp="1565363920305">Dialogue and model updates for Rin.</version>
+        <version number="12.33.14" timestamp="1565323542894">Dialogue updates for Meia.</version>
+        <version number="12.33.13" timestamp="1565319236126">Dialogue updates for Misty (HGSS).</version>
+        <version number="12.33.12" timestamp="1565317492957">Dialogue updates for Emi.</version>
+        <version number="12.33.11" timestamp="1565317133300">Updates for Revy and Caulifla.</version>
+        <version number="12.33.10" timestamp="1565278897414">Dialogue updates for Nugi-chan.</version>
+        <version number="12.33.9" timestamp="1565275799476">Posing and dialogue updates for Meia and Zizou, plus additional dialogue updates for Jura.</version>
+        <version number="12.33.8" timestamp="1565263252136">Improved the “Hot Springs” background.</version>
+        <version number="12.33.7" timestamp="1565243979602">Updates to Revy.</version>
+        <version number="12.33.6" timestamp="1565226750402">Dialogue updates for Caulifla.</version>
+        <version number="12.33.5" timestamp="1565207626565">Dialogue updates for Juri.</version>
+        <version number="12.33.4" timestamp="1565191396046">Dialogue updates for Zone-tan.</version>
+        <version number="12.33.3" timestamp="1565188971369">Dialogue updates for Meia and Jura.</version>
+        <version number="12.33.2" timestamp="1565163776719">Dialogue updates for Ryuji.</version>
+        <version number="12.33.1" timestamp="1565143873285">Updates to Emi.</version>
+        <version number="12.33.0" timestamp="1565138971444">Adds Leggy to the main roster!</version>
+        <version number="12.32.2" timestamp="1565134574906">Updates to Nami, Leggy, and Misty (HGSS).</version>
+        <version number="12.32.1" timestamp="1565096271717">Zone-tan dialogue update</version>
+        <version number="12.32.0" timestamp="1565095370342">Add "Summertime Magic" alternate skin for Zizou.</version>
+        <version number="12.31.15" timestamp="1565063271251">Dialogue updates for Emi, Sayaka, Meia, and Jura.</version>
+        <version number="12.31.14" timestamp="1565058849636">Updates to Saki Yoshida.</version>
+        <version number="12.31.13" timestamp="1565048932058">Posing updates to Caulifla.</version>
+        <version number="12.31.12" timestamp="1565048206172">Updates for Saki Nikaidou.</version>
+        <version number="12.31.11" timestamp="1565045369413">Dialogue updates and fixes for Rin.</version>
+        <version number="12.31.10" timestamp="1565045056340">Updates to Erufuda and Juri.</version>
+        <version number="12.31.9" timestamp="1565035598734">Dialogue and posing updates for Zone-tan.</version>
+        <version number="12.31.8" timestamp="1565019262245">Dialogue updates and bug fixes for Caulifla.</version>
+        <version number="12.31.7" timestamp="1565012217285">Dialogue updates for Meia.</version>
+        <version number="12.31.6" timestamp="1564975214692">Model updates for Chihiro and dialogue updates for Leafy.</version>
+        <version number="12.31.5" timestamp="1564895103565">Dialogue updates and bugfixes for Sayaka.</version>
+        <version number="12.31.4" timestamp="1564889450343">Updates to Leggy and Misty (HGSS)</version>
+        <version number="12.31.3" timestamp="1564861674740">Dialogue updates for Nami.</version>
+        <version number="12.31.2" timestamp="1564858280897">Updates to Leafy.</version>
+        <version number="12.31.1" timestamp="1564855655968">Updates to Pit, Palutena, and L'Arachel.</version>
+        <version number="12.31.0" timestamp="1564852701165">2019 Summer Event! New summer skins for Monika, Ryuji, Juri, Sheena, Sayaka, Nugi-chan, and L'Arachel. New Tiki Bar Background. Also includes updates to Cammy, Chun-Li, R. Mika, Leafy, Misty (HGSS), Erufuda, Emi, and Caulifla.</version>
+        <version number="12.30.2" timestamp="1564721466977">Updates to Leafy, Meia, and Pit.</version>
+        <version number="12.30.1" timestamp="1564687781269">Moves Zone-tan to the Testing Tables after a major update</version>
+        <version number="12.30.0" timestamp="1564680425361">Group selection screen updates, along with Leafy model and dialogue updates.</version>
+        <version number="12.29.1" timestamp="1564631586512">Dialogue updates for Misaka.</version>
+        <version number="12.29.0" timestamp="1564629433539">Adds Leafy to the Testing Tables, and also updates Emi's model and dialogue.</version>
+        <version number="12.28.9" timestamp="1564613198946">Dialogue and Costume updates for Juri.</version>
+        <version number="12.28.8" timestamp="1564580150023">Dialogue bugfixes for Caulifla.</version>
+        <version number="12.28.7" timestamp="1564576919002">Dialogue updates for Erufuda.</version>
+        <version number="12.28.6" timestamp="1564546804064">Updates to Palutena and Pit.</version>
+        <version number="12.28.5" timestamp="1564497743321">Updates to Meia, Jura, and Revy.</version>
+        <version number="12.28.4" timestamp="1564374659641">Posing updates for Meia.</version>
+        <version number="12.28.3" timestamp="1564340747028">Pose and dialogue updates for Caulifla.</version>
+        <version number="12.28.2" timestamp="1564281383133">Dialogue updates for Misaka.</version>
+        <version number="12.28.1" timestamp="1564252457145">Pose and dialogue updates for Rin.</version>
+        <version number="12.28.0" timestamp="1564181391426">Adds Nami to Testing, along with minor updates to Tharja, Juri, Chun-Li, and Cammy White.</version>
+        <version number="12.27.2" timestamp="1564159458333">Updated Lucina’s epilogue.</version>
+        <version number="12.27.1" timestamp="1564099016402">Updates to Pit and L'Arachel.</version>
+        <version number="12.27.0" timestamp="1564029993953">Adds Tharja to the testing tables.</version>
+        <version number="12.26.2" timestamp="1564022796202">Updates the Mahiru selfies with current models.</version>
+        <version number="12.26.1" timestamp="1564004051666">Bug fixes for Elizabeth.</version>
+        <version number="12.26.0" timestamp="1563986914000">Implemented a new game background selector and backgrounds tied to preset tables.</version>
+        <version number="12.25.9" timestamp="1563978948744">Pose and dialogue updates for Ryuji.</version>
+        <version number="12.25.8" timestamp="1563938068712">Dialogue updates and bugfixes for Misty (HGSS).</version>
+        <version number="12.25.7" timestamp="1563937394608">Dialogue updates and bug fixes for Rin, and pose updates for Meia.</version>
+        <version number="12.25.6" timestamp="1563931809453">Dialogue fixes and updates for Jura.</version>
+        <version number="12.25.5" timestamp="1563931584750">Dialogue updates for Erufuda.</version>
+        <version number="12.25.4" timestamp="1563922571166">Dialogue updates and bugfixes for Mae.</version>
+        <version number="12.25.3" timestamp="1563916511203">Bug fixes for Tracer, Meg, and Nugi-chan.</version>
+        <version number="12.25.2" timestamp="1563850212034">Bug fixes for Ochako.</version>
+        <version number="12.25.1" timestamp="1563840222660">Dialogue updates for Leggy and bugfixes for Mae.</version>
+        <version number="12.25.0" timestamp="1563824302486">Added Mae to the main roster!</version>
+        <version number="12.24.2" timestamp="1563820198056">Bug fixes for Hermione and Ciri.</version>
+        <version number="12.24.1" timestamp="1563762686488">Updates to Sayaka and Mae.</version>
+        <version number="12.24.0" timestamp="1563724517908">Model updates for Meia and Jura, and minor pose/dialogue updates for Revy.</version>
+        <version number="12.23.4" timestamp="1563671641100">Additional dialogue updates for Rin.</version>
+        <version number="12.23.3" timestamp="1563654246222">Dialogue updates and bug fixes for Misaka.</version>
+        <version number="12.23.2" timestamp="1563648661127">Updates to Leggy.</version>
+        <version number="12.23.1" timestamp="1563595705472">Dialogue updates for Misaka and Misty (HGSS).</version>
+        <version number="12.23.0" timestamp="1563592852000">Added Misaka Mikoto to Testing.</version>
+        <version number="12.22.6" timestamp="1563588421947">Dialogue update for Revy.</version>
+        <version number="12.22.5" timestamp="1563583926915">Dialogue updates and fixes to Rin.</version>
+        <version number="12.22.4" timestamp="1563582275845">Mulan v2.0.1</version>
+        <version number="12.22.3" timestamp="1563580834571">Updates to Ryuko, Revy, and Erufuda.</version>
+        <version number="12.22.2" timestamp="1563562185055">Begins Contest Delivery</version>
+        <version number="12.22.1" timestamp="1563499304142">Minor visual adjustments to Mahiru.</version>
+        <version number="12.22.0" timestamp="1563490020198">Adds Misty (HGSS) to Testing.</version>
+        <version number="12.21.0" timestamp="1563471224343">Added tooltips with descriptions of each player's poker hand.</version>
+        <version number="12.20.9" timestamp="1563416602691">Typo fixes for Miko.</version>
+        <version number="12.20.8" timestamp="1563397903234">Palutena updates, fixes for Pit and Mahiru.</version>
+        <version number="12.20.7" timestamp="1563332276481">Sei Updates, Mulan goes back to test to restore the Nmasp family honor</version>
+        <version number="12.20.6" timestamp="1563253448551">Epilogue updates for Mae.</version>
+        <version number="12.20.5" timestamp="1563252657151">Dialogue updates for Haru.</version>
+        <version number="12.20.4" timestamp="1563250571259">Dialogue and bug fixes for Rin.</version>
+        <version number="12.20.3" timestamp="1563239741838">Dialogue updates for Caulifla.</version>
+        <version number="12.20.2" timestamp="1563220153266">Futaba returns to the core roster, Natsuki updates.</version>
+        <version number="12.20.1" timestamp="1563123065708">Dialogue updates for Zizou.</version>
+        <version number="12.20.0" timestamp="1563093848000">Returns Alice (MGQ) to Testing.</version>
+        <version number="12.19.19" timestamp="1563078066630">More dialogue updates and bugfixes for Rin.</version>
+        <version number="12.19.18" timestamp="1563030819058">Dialogue bugfixes for Shimakaze and small dialogue updates for Remilia.</version>
+        <version number="12.19.17" timestamp="1562902065388">Dialogue bugfixes for Rin.</version>
+        <version number="12.19.16" timestamp="1562805904008">Bugfixes for Erufuda, Revy, Jura, and Ryuko.</version>
+        <version number="12.19.15" timestamp="1562785691592">Dialogue bugfixes for Caulifla.</version>
+        <version number="12.19.14" timestamp="1562779268740">Dialogue bugfixes for Amalia.</version>
+        <version number="12.19.13" timestamp="1562726017373">Dialogue updates and bugfixes for Rin.</version>
+        <version number="12.19.12" timestamp="1562610361617">Bugfixes for Mahiru and Coco.</version>
+        <version number="12.19.11" timestamp="1562609936472">Bugfixes for Mia, Palutena, and Pit.</version>
+        <version number="12.19.10" timestamp="1562534329975">Additional bugfixes for Rin.</version>
+        <version number="12.19.9" timestamp="1562526877358">Dialogue updates and bug fixes for Rin.</version>
+        <version number="12.19.8" timestamp="1562480128964">Model and dialogue update for Rin.</version>
+        <version number="12.19.7" timestamp="1562444599000">Targeting and misc. dialogue updates for Chihiro.</version>
+        <version number="12.19.6" timestamp="1562381656079">Dialogue updates for Caulifla.</version>
+        <version number="12.19.5" timestamp="1562374042232">Dialogue fixes for Caulifla.</version>
+        <version number="12.19.4" timestamp="1562309482640">Dialogue updates for Zizou.</version>
+        <version number="12.19.3" timestamp="1562295779823">Bugfixes for Haru.</version>
+        <version number="12.19.2" timestamp="1562265972045">Dialogue updates for Leggy.</version>
+        <version number="12.19.1" timestamp="1562218085809">Dialogue updates and bug fixes for Syrenne.</version>
+        <version number="12.19.0" timestamp="1562194454970">Fixed text and UI element scaling with respect to screen width.</version>
+        <version number="12.18.26" timestamp="1562194007241">Updates to L'Arachel.</version>
+        <version number="12.18.25" timestamp="1562185398929">Dialogue fixes for Caulifla.</version>
+        <version number="12.18.24" timestamp="1562123482655">Bugfixes for Lotte.</version>
+        <version number="12.18.23" timestamp="1562117349069">Dialogue updates and bugfixes for Rin.</version>
+        <version number="12.18.22" timestamp="1562102473112">Updates to Mae.</version>
+        <version number="12.18.21" timestamp="1562101231711">Dialogue updates to Haru.</version>
+        <version number="12.18.20" timestamp="1562039488189">Bugfixes and updates for Rin.</version>
+        <version number="12.18.19" timestamp="1562021745317">Dialogue and pose updates for Erufuda.</version>
+        <version number="12.18.18" timestamp="1562021544915">Even more dialogue fixes for Caulifla.</version>
+        <version number="12.18.17" timestamp="1562016884882">Additional dialogue fixes for Caulifla.</version>
+        <version number="12.18.16" timestamp="1562009362825">More dialogue fixes for Caulifla.</version>
+        <version number="12.18.15" timestamp="1562000240613">Dialogue and pose updates for Caulifla.</version>
+        <version number="12.18.14" timestamp="1561956580497">Dialogue and posing updates to Revy, and minor dialogue tweaks for Meia and Ryuko.</version>
+        <version number="12.18.13" timestamp="1561939142977">Updates to Pit.</version>
+        <version number="12.18.12" timestamp="1561932660095">Bugfixes for Marceline.</version>
+        <version number="12.18.11" timestamp="1561932562686">Additional dialogue updates and bugfixes for Rin.</version>
+        <version number="12.18.10" timestamp="1561928675002">Saki returns to the main game.</version>
+        <version number="12.18.9" timestamp="1561922220419">Dialogue updates to Leggy.</version>
+        <version number="12.18.8" timestamp="1561910349680">Dialogue updates for Marceline.</version>
+        <version number="12.18.7" timestamp="1561910280962">Dialogue updates and fixes for Rin.</version>
+        <version number="12.18.6" timestamp="1561906964905">Typo and tag fixes for Saki Nikaido.</version>
+        <version number="12.18.5" timestamp="1561842754808">Dialogue updates for Kamina.</version>
+        <version number="12.18.4" timestamp="1561842739113">Dialogue updates for Rinkah.</version>
+        <version number="12.18.3" timestamp="1561826634057">Bugfixes and updates for Saki Yoshida.</version>
+        <version number="12.18.2" timestamp="1561826492496">Dialogue updates for Revy.</version>
+        <version number="12.18.1" timestamp="1561764686357">Dialogue updates for Leggy.</version>
+        <version number="12.18.0" timestamp="1561759510976">Adds Rin to testing.</version>
+        <version number="12.17.4" timestamp="1561692265166">Tagging update for Erufuda and a minor bugfix for Sayori.</version>
+        <version number="12.17.3" timestamp="1561645795081">Bugfixes and dialogue updates for Remilia.</version>
+        <version number="12.17.2" timestamp="1561610682211">Model and dialogue updates for Pinkie Pie, as well as a minor dialogue update for Sayori.</version>
+        <version number="12.17.1" timestamp="1561604451746">Dialogue updates for Sayaka.</version>
+        <version number="12.17.0" timestamp="1561596716529">Adds Erufuda to testing.</version>
+        <version number="12.16.0" timestamp="1561589234085">More updates to Leggy. Also adds Saki (ZLS) to Testing.</version>
+        <version number="12.15.0" timestamp="1561576739825">Updates to Akko, Leggy, Roxie, Sola, Revy, Sayori, Lucina, Estelle, Pit, and Nug-chan. Adds Caulifla to testing.</version>
+        <version number="12.14.2" timestamp="1561369713328">Dialogue updates to Mae and Mavis.</version>
+        <version number="12.14.1" timestamp="1561318125331">L'Arachel has joined the game!</version>
+        <version number="12.14.0" timestamp="1561305262538">Moves HK416 and Dark Magician Girl to the incomplete roster.</version>
+        <version number="12.13.5" timestamp="1561255210772">Updates to Mae.</version>
+        <version number="12.13.4" timestamp="1561165896650">Updates to Chihiro.</version>
+        <version number="12.13.3" timestamp="1561159021962">Adds an epilogue for Mae.</version>
+        <version number="12.13.2" timestamp="1561152857461">Dialogue updates to Leggy, Roxie and Zizou.</version>
+        <version number="12.13.1" timestamp="1560885765522">Updates to Nugi-chan, Sakura, Leggy, L'Arachel, and Pit.</version>
+        <version number="12.13.0" timestamp="1560732620694">Adds Leggy to testing.</version>
+        <version number="12.12.0" timestamp="1560629731453">Removes Sayla from the testing tables.</version>
+        <version number="12.11.11" timestamp="1560544299303">Updates to Sakura, Akko, Pit, L'Arachel, Saki, and Nugi-chan.</version>
+        <version number="12.11.10" timestamp="1560282505129">Updates to Meia and Revy.</version>
+        <version number="12.11.9" timestamp="1560200176736">Updates to Roxie, Syrenne, and Nugi-chan.</version>
+        <version number="12.11.8" timestamp="1560190392422">Dialogue updates to Palutena.</version>
+        <version number="12.11.7" timestamp="1560029098700">Minor updates to Mahiru's art.</version>
+        <version number="12.11.6" timestamp="1559943964968">Updates to Pit and L'Arachel.</version>
+        <version number="12.11.5" timestamp="1559891752466">Dialogue updates to Cammy, Chun-Li, Juri, Rainbow Mika, Revy, and Jura, and updates Revy's epilogue.</version>
+        <version number="12.11.4" timestamp="1559709182570">Updates to Jin, Sheena, L'Arachel</version>
+        <version number="12.11.3" timestamp="1559673825827">Updates to L'Arachel.</version>
+        <version number="12.11.2" timestamp="1559533900060">Updates to Calisto, Franziska, Natsuki, and Sakura</version>
+        <version number="12.11.1" timestamp="1559500597725">Updates to Mae, Rinkah, and Roxie.</version>
+        <version number="12.11.0" timestamp="1559330366240">The Heroes Update! L'Arachel, Syrenne, Rinkah, and Chiaki join testing. Male Corrin is moved offline.</version>
+        <version number="12.10.4" timestamp="1559231964010">Updates to Nayru.</version>
+        <version number="12.10.3" timestamp="1559180385915">Several tweaks to many characters.</version>
+        <version number="12.10.2" timestamp="1559153897403">Added collectibles to Nugi-chan, Nagisa, and Sanako</version>
+        <version number="12.10.1" timestamp="1559144693481">Updates to Mae and Ryuji.</version>
+        <version number="12.10.0" timestamp="1559118573388">Akko has joined the game!</version>
+        <version number="12.9.13" timestamp="1559102895760">Adjustments to Akko, Emi, Futaba, Ryuko, Sei</version>
+        <version number="12.9.12" timestamp="1559088830002">Dialogue updates to Pit.</version>
+        <version number="12.9.11" timestamp="1558871573223">Updates to Mei, Meia, Jura, and Nugi-chan, Meia</version>
+        <version number="12.9.10" timestamp="1558864679399">Lucina model update.</version>
+        <version number="12.9.9" timestamp="1558743087214">Adds Emi to test.</version>
+        <version number="12.9.8" timestamp="1558582001329">Dialogue updates for Estelle.</version>
+        <version number="12.9.7" timestamp="1558573588543">Pose and dialogue updates for Saki.</version>
+        <version number="12.9.6" timestamp="1558569513302">Dialogue updates for Dark Magician Girl.</version>
+        <version number="12.9.5" timestamp="1558564588398">Updates to Palutena.</version>
+        <version number="12.9.4" timestamp="1558546567197">Minor targeting updates for Estelle.</version>
+        <version number="12.9.3" timestamp="1558538709492">Further adjustments to Meia's posing.</version>
+        <version number="12.9.2" timestamp="1558502514885">Minor Mae and Pit updates.</version>
+        <version number="12.9.1" timestamp="1558448014461">Target line and posing updates for Meia.</version>
+        <version number="12.9.0" timestamp="1558444172000">Updates and re-adds Dark Magician Girl to Testing!</version>
+        <version number="12.8.2" timestamp="1558374824773">Posing tweaks for Meia.</version>
+        <version number="12.8.1" timestamp="1558370233733">Dialogue update to Lucina.</version>
+        <version number="12.8.0" timestamp="1558317800071">Added offline character dev mode, as well as minor updates to Estelle, Saki, HK416, and Chihiro.</version>
+        <version number="12.7.5" timestamp="1558285889002">Updates to Nugi-chan, Meia, Jura, and D.Va</version>
+        <version number="12.7.4" timestamp="1558224184038">Updates to Estelle.</version>
+        <version number="12.7.3" timestamp="1558217734429">Mae updates and some Pit bug fixes.</version>
+        <version number="12.7.2" timestamp="1558203086870">Art updates for Meia and Jura.</version>
+        <version number="12.7.1" timestamp="1558197062635">Bugfixes and updates to Ryuji.</version>
+        <version number="12.7.0" timestamp="1558125276572">Adds an Epilogue to Raven, along with general dialogue updates to Raven.</version>
+        <version number="12.6.0" timestamp="1558122502446">Adds Estelle to the testing tables.</version>
+        <version number="12.5.11" timestamp="1558116084375">Updates to Mae.</version>
+        <version number="12.5.10" timestamp="1558022484779">Updates to Saki, Revy, Jura, and Aella.</version>
+        <version number="12.5.9" timestamp="1557883212648">Additional updates to Aella.</version>
+        <version number="12.5.8" timestamp="1557880288735">Updates to Joey.</version>
+        <version number="12.5.7" timestamp="1557854091946">Target line updates for Pinkie Pie and Twilight.</version>
+        <version number="12.5.6" timestamp="1557807812900">Misc updates to testing table characters</version>
+        <version number="12.5.5" timestamp="1557800698176">Added targeted dialogue from Aella to a number of opponents.</version>
+        <version number="12.5.4" timestamp="1557796456763">Updates to Remilia and Shimakaze.</version>
+        <version number="12.5.3" timestamp="1557750005110">Dialogue fixes and updates for Twilight.</version>
+        <version number="12.5.2" timestamp="1557715201808">Typo fixes and targeting updates for Saki.</version>
+        <version number="12.5.1" timestamp="1557709063469">Dialogue updates for Pinkie.</version>
+        <version number="12.5.0" timestamp="1557686459782">Returns Palutena to testing with brand-new art.</version>
+        <version number="12.4.7" timestamp="1557683379808">Image updates to Jura, Ryuko, and Calisto.</version>
+        <version number="12.4.6" timestamp="1557622049606">Sakura epilogue, Akko sponsorship, Ryuji+Futaba minor changes.</version>
+        <version number="12.4.5" timestamp="1557615006626">Added targeting from Saki to Sakura/Hanako/Ryuko.</version>
+        <version number="12.4.4" timestamp="1557607227141">Typo fixes and targeting updates for Mae.</version>
+        <version number="12.4.3" timestamp="1557583109379">Updated Meia with more lines and posing/difficulty tweaks.</version>
+        <version number="12.4.2" timestamp="1557546819669">Fixed bugs and added targeting towards Kamina in Mae's dialogue.</version>
+        <version number="12.4.1" timestamp="1557534221692">Updates to Mae, Ryuji, and Mahiru.</version>
+        <version number="12.4.0" timestamp="1557531354624">Moves Saki back to Testing with a major update!</version>
+        <version number="12.3.14" timestamp="1557490480358">Updated Meia, Jura, and Revy with extra targeted lines; also updated Sayla.</version>
+        <version number="12.3.13" timestamp="1557408645386">Updates to Sayla.</version>
+        <version number="12.3.12" timestamp="1557376119976">Updates for Mae.</version>
+        <version number="12.3.11" timestamp="1557358456982">Updates to Revy.</version>
+        <version number="12.3.10" timestamp="1557321129782">Updated Sayla.</version>
+        <version number="12.3.9" timestamp="1557275691552">Sayla adjustments, some typo fixes.</version>
+        <version number="12.3.8" timestamp="1557268880291">Bugfixes for Mae.</version>
+        <version number="12.3.7" timestamp="1557253832877">Adds Mae to test, slims Kizuna down.</version>
+        <version number="12.3.6" timestamp="1557195307456">Updated Catria.</version>
+        <version number="12.3.5" timestamp="1557193375478">Bugfixes for Florina and Haru.</version>
+        <version number="12.3.4" timestamp="1557191656672">Updates to Aella.</version>
+        <version number="12.3.3" timestamp="1557076783050">Adds collectibles for Aella and various updates for Meia.</version>
+        <version number="12.3.2" timestamp="1557018435016">Haru and Ryuji updates.</version>
+        <version number="12.3.1" timestamp="1556983752216">Adds a collectible for Ryuko.</version>
+        <version number="12.3.0" timestamp="1556937208334">Added a manual save/load system, for players who use Incognito mode (or would like to save their progress in a tangible format).</version>
+        <version number="12.2.4" timestamp="1556910032010">Added Collectibles to Meia, Jura, and Revy; added dialogue to Meia and Jura</version>
+        <version number="12.2.3" timestamp="1556829114600">Updates to Nugi-chan</version>
+        <version number="12.2.2" timestamp="1556773992874">Added collectibles for Pit.</version>
+        <version number="12.2.1" timestamp="1556769178855">Added collectibles for Chun-Li, Cammy, and Juri, and also fixed Juri's epilogue.</version>
+        <version number="12.2.0" timestamp="1556766826798">Moves Penny to the incomplete roster.</version>
+        <version number="12.1.8" timestamp="1556763931318">Fixed bugs with Ryuji.</version>
+        <version number="12.1.7" timestamp="1556759910705">Updates for Twilight.</version>
+        <version number="12.1.6" timestamp="1556744988215">Applied fixes for Zizou and added a collectible for Sola.</version>
+        <version number="12.1.5" timestamp="1556665484810">Twilight typo fixes.</version>
+        <version number="12.1.4" timestamp="1556660346899">Updates to Haru and Ryuji.</version>
+        <version number="12.1.3" timestamp="1556601841890">Updates to Zizou.</version>
+        <version number="12.1.2" timestamp="1556594490035">Updates to Florina.</version>
+        <version number="12.1.1" timestamp="1556581957665">Updates to Remilia and Shimakaze.</version>
+        <version number="12.1.0" timestamp="1556569465803">Updated Croix and moved her to the incomplete roster by creator request.</version>
+        <version number="12.0.0" timestamp="1556549514970">Resort the roster according to Resort 7. Also refreshes the selection screen and in-game UIs, and includes a host of other background changes.</version>
+        <version number="11.80.7" timestamp="1556503592158">Updates for Calisto.</version>
+        <version number="11.80.6" timestamp="1556501100229">Updates for Rainbow Mika's epilogue.</version>
+        <version number="11.80.5" timestamp="1556491151949">Updates to Pit, Palutena, and Mahiru.</version>
+        <version number="11.80.4" timestamp="1556422708290">Updates for Aella.</version>
+        <version number="11.80.3" timestamp="1556418477454">Updates to Ryuji and Haru.</version>
+        <version number="11.80.2" timestamp="1556412747354">Updates to Sheena.</version>
+        <version number="11.80.1" timestamp="1556304273805">Updates to Misato.</version>
+        <version number="11.80.0" timestamp="1556298869282">Lucina Updates to Lucina.</version>
+        <version number="11.79.7" timestamp="1556288361676">Updates to Jura and Meia.</version>
+        <version number="11.79.6" timestamp="1556266033540">Updates to Ryuji and Haru.</version>
+        <version number="11.79.5" timestamp="1556194160608">Fixed selection screen filter option issues.</version>
+        <version number="11.79.4" timestamp="1556191291712">Updates to Misato.</version>
+        <version number="11.79.3" timestamp="1556160162867">Updates to Remilia and Shimakaze.</version>
+        <version number="11.79.2" timestamp="1556156907486">Sakura updates for Napsu?</version>
+        <version number="11.79.1" timestamp="1556153376732">Updates to Remilia.</version>
+        <version number="11.79.0" timestamp="1556138243468">Migrated save data to localStorage, hopefully improving the reliability of the save system.</version>
+        <version number="11.78.8" timestamp="1556114729364">Updates to Remilia</version>
+        <version number="11.78.7" timestamp="1556110126220">Updates to Meia.</version>
+        <version number="11.78.6" timestamp="1556061695244">Adjusts Pit targeting to Akko, adds lines toward Sakura.</version>
+        <version number="11.78.5" timestamp="1556059786171">Updates to Meia.</version>
+        <version number="11.78.4" timestamp="1556056643654">Akko stripping updates</version>
+        <version number="11.78.3" timestamp="1556030092386">Updates to Meia, Jura, and Revy.</version>
+        <version number="11.78.2" timestamp="1555988881615">Updates for Mavis, Aella, Joey, and Spooky.</version>
+        <version number="11.78.1" timestamp="1555979735517">Fixes for Calisto's dialogue.</version>
+        <version number="11.78.0" timestamp="1555979704281">Moved Sayla back to Testing after being adopted by a new author!</version>
+        <version number="11.77.4" timestamp="1555959303343">Updates to Sheena and Catria.</version>
+        <version number="11.77.3" timestamp="1555921696533">Updates to Calisto and Aella.</version>
+        <version number="11.77.2" timestamp="1555921614947">Fixes and tweaks for Jura, Meia, and Revy.</version>
+        <version number="11.77.1" timestamp="1555919786697">Bugfixes for Ryuko.</version>
+        <version number="11.77.0" timestamp="1555835649143">Started the Easter 2019 Event</version>
+        <version number="11.76.1" timestamp="1555830701608">Updates to Ryuko, Revy, and Haru.</version>
+        <version number="11.76.0" timestamp="1555816754677">Added an in-game FAQ.</version>
+        <version number="11.75.4" timestamp="1555813677577">Updated Haru and Ryuji.</version>
+        <version number="11.75.3" timestamp="1555811944177">Updated Remilia's tags.</version>
+        <version number="11.75.2" timestamp="1555810706890">Further post-QA updates to Ryuko.</version>
+        <version number="11.75.1" timestamp="1555808041432">Updated Kyu's animations and tags.</version>
+        <version number="11.75.0" timestamp="1555798914751">Ryuko has joined the game! Kyu has also received updates.</version>
+        <version number="11.74.0" timestamp="1555790496587">Returns Rainbow Mika to the main roster after an update, and moves Haru back to the Testing Tables with an art update of her own.</version>
+        <version number="11.73.2" timestamp="1555740064972">Updated Remilia and Shimakaze.</version>
+        <version number="11.73.1" timestamp="1555727433715">Added infrastructure to make it easier to keep the game version number up to date. Additionally, Chihiro received a minor update.</version>
+        <version number="11.73" timestamp="1554776913000">Hanako has joined the game! Cammy has been reworked!</version>
+        <version number="11.71" timestamp="1554235500000">Miko, Ini, Coco, Rarity, Franziska, and Sayaka have joined the game! Sheena has been reworked! Added support for characters using the Pose Engine.</version>
+        <version number="11.70" timestamp="1545860760000">Lotte, Kizuna AI, Haru, Jotaro, Cammy, Sayori, Pinkie Pie and Kamina have joined the game! Also re-sorted the character roster.</version>
+        <version number="11.69" timestamp="1542051480000">Natsuki, Catria, Mulan, Remilia and Navi have joined the game! Also adds the alternate costume selector to the offline version of the game.</version>
+        <version number="11.68" timestamp="1537758780000">Beatrix, Juri, Jolyne, Shimakaze, Ryuji, and Nayru have joined the game!</version>
+        <version number="11.67" timestamp="1532577120000">Black Canary has joined the game!</version>
+        <version number="11.66" timestamp="1531628940000">Launch, Kira, and Monika have joined the game!</version>
+        <version number="11.65" timestamp="1531149540000">Jin has joined the game!</version>
+        <version number="11.64" timestamp="1530853140000">Joey has joined the game!</version>
+        <version number="11.63" timestamp="1530163200000">Faye has joined the game!</version>
+        <version number="11.62" timestamp="1529638740000">Velma and Amalia have returned to the game!</version>
+    </changelog>
+</version-info>

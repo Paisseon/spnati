@@ -1,0 +1,12 @@
+model/
+sayori-joint-poses/*.png
+helper-scripts/pose-charts/
+helper-scripts/*.csv
+helper-scripts/*.csv#
+poses.csv
+convert.log
+__pycache__/
+summer_alt/out
+summer_alt/components
+summer_alt/codes
+summer_alt/kkl_import.py
