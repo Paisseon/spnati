@@ -9,13 +9,15 @@ SPNatI brought to iOS
 
 • Filza from https://mainrepo.org
 
-• NewTerm 2 from https://repo.chariz.com (alternative: MTerminal if you have it)
+• NewTerm 2 from https://repo.chariz.com
 
 • Python 3.8 from https://apt.procurs.us
 
+• Bottle ('python3 -m ensurepip' then 'python3 -m pip install bottle')
+
 • debugserver from https://apt.procurs.us
 
-• Character files from from https://b.link/spnati (alternative: download characters from the GitGud)
+• Character files from from https://b.link/spnati
 
 **Installation:**
 
@@ -31,7 +33,7 @@ alias spnati="cd /var/mobile/SPNatI; python3 offline_host.py"
 
 alias localhost="debugserver localhost:8080"
 
-• Add characters (make sure to have at least 8 characters or the game won't start. this is not my fault, it is a SPNatI bug)
+• Add at least 8 characters by moving their folders into /var/mobile/SPNatI/opponents
 
 • In NewTerm type 'spnati'
 
