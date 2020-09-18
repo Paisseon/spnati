@@ -31,10 +31,12 @@ alias spnati="cd /var/mobile/SPNatI; python3 offline_host.py"
 
 alias localhost="debugserver localhost:8080"
 
+• Add characters (make sure to have at least 8 characters or the game won't start. this is not my fault, it is a SPNatI bug)
+
 • In NewTerm type 'spnati'
 
 • Open a new tab in NewTerm and type 'localhost'
 
-• Open Safari and go to localhost:8080
+• Open Safari and go to localhost:8080. If it fails to connect try localhost:8080/index.html
 
 ![Kanna calling you hentai](https://i.ytimg.com/vi/Tcf7GO9nphw/maxresdefault.jpg)
