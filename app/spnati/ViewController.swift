@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     @IBAction func onOfflineButtonClick(_ sender: Any) {
         offlineView.isHidden = true
         webViewContainer.isHidden = false
-        loadAppUrl()
+        loadSpnati()
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
@@ -45,6 +45,7 @@ class ViewController: UIViewController {
         }
         if (keyPath == #keyPath(WKWebView.estimatedProgress)) {
             progressBar.progress = Float(webView.estimatedProgress)
+            progressBar.isHidden = true
         }
     }
     
@@ -69,6 +70,7 @@ class ViewController: UIViewController {
         progressBar.progress = 0.0
         progressBar.tintColor = progressBarColor
         webView.addSubview(progressBar)
+        progressBar.isHidden = true
         
         activityIndicator.color = activityIndicatorColor
         activityIndicator.startAnimating()
@@ -76,15 +78,15 @@ class ViewController: UIViewController {
         offlineView.isHidden = true
     }
 
-    func loadAppUrl() {
-        let urlRequest = URLRequest(url: spnatiServer!)
-        webView.load(urlRequest)
+    func loadSpnati() {
+        let requestSpnati = URLRequest(url: spnatiServer!)
+        webView.load(requestSpnati)
     }
     
     func setupApp() {
         setupWebView()
         setupUI()
-        loadAppUrl()
+        loadSpnati()
     }
     
     deinit {
