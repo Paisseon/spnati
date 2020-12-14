@@ -82,12 +82,12 @@ var FORFEIT_DELAY = null;
 var ENDING_DELAY = null;
 var GAME_OVER_DELAY = 1000;
 var SHOW_ENDING_DELAY = 5000; //5 seconds
-var CARD_SUGGEST = false;
+var CARD_SUGGEST = true;
 var PLAYER_FINISHING_EFFECT = true;
 var EXPLAIN_ALL_HANDS = true;
 var AUTO_FADE = true;
 var MINIMAL_UI = true;
-var DEBUG = false;
+var DEBUG = true;
 
 /* game state
  * 
@@ -123,7 +123,7 @@ var recentWinner = -1;
 var gameOver = false;
 var actualMainButtonState = false;
 var endWaitDisplay = 0;
-var showDebug = false;
+var showDebug = true;
 var chosenDebug = -1;
 var autoForfeitTimeoutID; // Remember this specifically so that it can be cleared if auto forfeit is turned off.
 var repeatLog = {1:{}, 2:{}, 3:{}, 4:{}};
@@ -167,6 +167,7 @@ function loadGameScreen () {
     $gamePlayerCountdown.removeClass('pulse');
     chosenDebug = -1;
     updateDebugState(showDebug);
+    setDevSelectorVisibility(showDebug);
     
     /* randomize start lines for characters using legacy start lines.
      * The updateAllBehaviours() call below will override this for any
@@ -666,7 +667,33 @@ function endRound () {
     /* if there is only one player left, end the game */
     if (inGame <= 1) {
         if (USAGE_TRACKING) {
-            recordEndGameEvent(players[lastPlayer].id);
+            var usage_tracking_report = {
+                'date': (new Date()).toISOString(),
+                'commit': VERSION_COMMIT,
+                'type': 'end_game',
+                'session': sessionID,
+                'game': gameID,
+                'userAgent': navigator.userAgent,
+                'origin': getReportedOrigin(),
+                'table': {},
+                'winner': players[lastPlayer].id
+            };
+            
+            for (let i=1;i<5;i++) {
+                if (players[i]) {
+                    usage_tracking_report.table[i] = players[i].id;
+                }
+            }
+            
+            $.ajax({
+                url: USAGE_TRACKING_ENDPOINT,
+                method: 'POST',
+                data: JSON.stringify(usage_tracking_report),
+                contentType: 'application/json',
+                error: function (jqXHR, status, err) {
+                    console.error("Could not send usage tracking report - error "+status+": "+err);
+                },
+            });
         }
         
 		console.log("The game has ended!");
