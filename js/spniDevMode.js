@@ -8,7 +8,7 @@ var devSelectorButtons = [
     $('#dev-select-button-4'),
 ];
 
-var devModeActive = false;
+var devModeActive = true;
 var devModeTarget = 0;
 
 function showDevExportModal () {
@@ -34,9 +34,8 @@ function setDevModeTarget (target) {
     $('.dev-select-button').removeClass('active');
     
     if (!target || (devModeActive && target === devModeTarget)) {
-        devModeActive = false;
+        devModeActive = true;
         devModeTarget = 0;
-        $gameScreen.removeClass('dev-mode');
     } else {
         devModeActive = true;
         devModeTarget = target;
